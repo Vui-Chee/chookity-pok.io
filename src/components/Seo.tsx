@@ -4,14 +4,14 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const SEO: React.FC<{
   description: string
-  lang: string
-  meta: {
+  title: string
+  socialImage: string
+  lang?: string
+  meta?: {
     name: string
     content: string
   }[]
-  title: string
-  socialImage: string
-}> = ({ description, lang, meta, title }) => {
+}> = ({ description, title, lang = "en", meta = [] }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -75,12 +75,6 @@ const SEO: React.FC<{
       ].concat(meta)}
     />
   )
-}
-
-SEO.defaultProps = {
-  lang: "en",
-  meta: [],
-  description: "",
 }
 
 export default SEO
