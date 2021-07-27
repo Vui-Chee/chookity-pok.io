@@ -1,17 +1,17 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
+import React from "react"
+import { Link, graphql } from "gatsby"
 
-import Layout from "../components/Layout";
+import Layout from "../components/Layout"
 
 const toKebabCase = (str: string) => {
   return str
     .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
     .map((x) => x.toLowerCase())
-    .join("-");
-};
+    .join("-")
+}
 
 const Tags = ({ data }) => {
-  const tags = data.allMarkdownRemark.group;
+  const tags = data.allMarkdownRemark.group
 
   return (
     <Layout title="All Tags">
@@ -27,10 +27,10 @@ const Tags = ({ data }) => {
         ))}
       </ul>
     </Layout>
-  );
-};
+  )
+}
 
-export default Tags;
+export default Tags
 
 export const pageQuery = graphql`
   query {
@@ -41,4 +41,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

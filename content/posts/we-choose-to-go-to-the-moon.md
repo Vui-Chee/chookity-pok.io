@@ -2,7 +2,7 @@
 title: We Choose to go to the Moon
 date: 2021-01-01
 tags: [space, moon]
-social_image: '/media/rocket.jpg'
+social_image: "/media/rocket.jpg"
 description: This is a custom description for SEO and Open Graph purposes. If it's not provided, it defaults to auto-generated excerpts of the page content.
 ---
 
@@ -45,10 +45,10 @@ Phoebi volucris moveo.
 ```javascript
 // finds a given word in a string and replace with another one
 const findAndReplace = (string, wordToFind, wordToReplace) => {
-  return string.split(wordToFind).join(wordToReplace);
-};
+  return string.split(wordToFind).join(wordToReplace)
+}
 
-let result = findAndReplace('I like banana', 'banana', 'apple'); // I like apple
+let result = findAndReplace("I like banana", "banana", "apple") // I like apple
 ```
 
 ## Quoted Text

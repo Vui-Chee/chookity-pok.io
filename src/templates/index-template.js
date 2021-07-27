@@ -1,15 +1,15 @@
-import React from "react";
-import { graphql } from "gatsby";
-import styled from "styled-components";
+import React from "react"
+import { graphql } from "gatsby"
+import styled from "styled-components"
 
-import Layout from "../components/Layout";
-import PostList from "../components/PostList";
-import StyledLink from "../components/styled-link";
+import Layout from "../components/Layout"
+import PostList from "../components/PostList"
+import StyledLink from "../components/styled-link"
 
 const HomePage = ({ data }) => {
-  const posts = data.allMarkdownRemark.nodes;
-  const intro = data.markdownRemark.html;
-  const title = data.markdownRemark.frontmatter.title;
+  const posts = data.allMarkdownRemark.nodes
+  const intro = data.markdownRemark.html
+  const title = data.markdownRemark.frontmatter.title
 
   return (
     <Layout title={title}>
@@ -34,10 +34,10 @@ const HomePage = ({ data }) => {
         View All posts
       </StyledLink>
     </Layout>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage
 
 const Intro = styled.div`
   display: flex;
@@ -60,7 +60,7 @@ const Intro = styled.div`
       font-size: var(--size-700);
     }
   }
-`;
+`
 
 export const pageQuery = graphql`
   query($slug: String!) {
@@ -95,4 +95,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

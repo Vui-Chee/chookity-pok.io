@@ -1,13 +1,13 @@
-import React from "react";
-import { graphql } from "gatsby";
-import styled from "styled-components";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import React from "react"
+import { graphql } from "gatsby"
+import styled from "styled-components"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-import Layout from "../components/Layout";
+import Layout from "../components/Layout"
 
 const AboutTemplate = ({ data }) => {
-  const { html, frontmatter } = data.markdownRemark;
-  const profileImage = getImage(frontmatter.profile_image);
+  const { html, frontmatter } = data.markdownRemark
+  const profileImage = getImage(frontmatter.profile_image)
 
   return (
     <Layout title={frontmatter.title}>
@@ -17,10 +17,10 @@ const AboutTemplate = ({ data }) => {
         <AboutCopy dangerouslySetInnerHTML={{ __html: html }} />
       </AboutWrapper>
     </Layout>
-  );
-};
+  )
+}
 
-export default AboutTemplate;
+export default AboutTemplate
 
 const AboutWrapper = styled.div`
   display: flex;
@@ -39,14 +39,14 @@ const AboutWrapper = styled.div`
       text-align: center;
     }
   }
-`;
+`
 
 const AboutImageWrapper = styled(GatsbyImage)`
   display: block;
   border-radius: 50%;
   height: 300px;
   width: 300px;
-`;
+`
 
 const AboutCopy = styled.div`
   max-width: 60ch;
@@ -54,7 +54,7 @@ const AboutCopy = styled.div`
   & p {
     font-size: var(--size-400);
   }
-`;
+`
 
 export const pageQuery = graphql`
   query($slug: String!) {
@@ -70,4 +70,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

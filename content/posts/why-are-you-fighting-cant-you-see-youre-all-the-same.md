@@ -39,10 +39,10 @@ Phoebi volucris moveo.
 ```javascript
 // finds a given word in a string and replace with another one
 const findAndReplace = (string, wordToFind, wordToReplace) => {
-  return string.split(wordToFind).join(wordToReplace);
-};
+  return string.split(wordToFind).join(wordToReplace)
+}
 
-let result = findAndReplace('I like banana', 'banana', 'apple'); // I like apple
+let result = findAndReplace("I like banana", "banana", "apple") // I like apple
 ```
 
 ## Quoted Text

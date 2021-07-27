@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 const Container = styled.div`
   margin-left: auto;
@@ -14,6 +14,6 @@ const Container = styled.div`
       padding-right: var(--size-400);
     }
   }
-`;
+`
 
-export default Container;
+export default Container

@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
+import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
 
 const toKebabCase = (str) => {
   return str
     .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
     .map((x) => x.toLowerCase())
-    .join('-');
-};
+    .join("-")
+}
 
 const Tags = ({ tags }) => {
   return (
@@ -18,13 +18,13 @@ const Tags = ({ tags }) => {
             <Tag key={tag}>
               <Link to={`/tags/${toKebabCase(tag)}`}>{tag}</Link>
             </Tag>
-          );
+          )
         })}
     </div>
-  );
-};
+  )
+}
 
-export default Tags;
+export default Tags
 
 const Tag = styled.span`
   margin-right: 0.6rem;
@@ -46,4 +46,4 @@ const Tag = styled.span`
   & a:hover {
     background-color: rgba(255, 255, 255, 0.9);
   }
-`;
+`

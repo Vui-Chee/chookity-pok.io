@@ -1,5 +1,5 @@
-import { Link } from 'gatsby';
-import styled from 'styled-components';
+import { Link } from "gatsby"
+import styled from "styled-components"
 
 const StyledLink = styled(Link)`
   padding: 0.5rem;
@@ -12,6 +12,6 @@ const StyledLink = styled(Link)`
   border: 1px solid rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   border-radius: 4px;
-`;
+`
 
-export default StyledLink;
+export default StyledLink

@@ -1,14 +1,14 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-import styled from "styled-components";
+import React from "react"
+import { Link, graphql } from "gatsby"
+import styled from "styled-components"
 
-import Layout from "../components/Layout";
-import Tags from "../components/Tags";
+import Layout from "../components/Layout"
+import Tags from "../components/Tags"
 
 const PostTemplate = ({ data }) => {
-  const { frontmatter, excerpt, html } = data.markdownRemark;
-  const prev = data.prev;
-  const next = data.next;
+  const { frontmatter, excerpt, html } = data.markdownRemark
+  const prev = data.prev
+  const next = data.next
 
   return (
     <Layout
@@ -44,10 +44,10 @@ const PostTemplate = ({ data }) => {
         <Tags tags={frontmatter.tags} />
       </PostWrapper>
     </Layout>
-  );
-};
+  )
+}
 
-export default PostTemplate;
+export default PostTemplate
 
 const PostWrapper = styled.div`
   padding-top: var(--size-900);
@@ -56,17 +56,17 @@ const PostWrapper = styled.div`
   margin-right: auto;
   max-width: 70ch;
   word-wrap: break-word;
-`;
+`
 
 const PostTitle = styled.h1`
   font-size: var(--size-700);
-`;
+`
 
 const PostDate = styled.span`
   font-size: var(--size-400);
   padding-top: 1rem;
   text-transform: uppercase;
-`;
+`
 
 const PostContent = styled.section`
   padding-top: var(--size-800);
@@ -125,7 +125,7 @@ const PostContent = styled.section`
     white-space: pre-wrap;
     max-width: 100%;
   }
-`;
+`
 
 const PostPagination = styled.nav`
   display: flex;
@@ -173,7 +173,7 @@ const PostPagination = styled.nav`
     top: 0;
     bottom: 0;
   }
-`;
+`
 
 export const pageQuery = graphql`
   query PostBySlug($slug: String!, $prevSlug: String, $nextSlug: String) {
@@ -209,4 +209,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

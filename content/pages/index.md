@@ -1,6 +1,6 @@
 ---
-template: 'index-template'
-title: 'Gatsby Starter Glass'
+template: "index-template"
+title: "Gatsby Starter Glass"
 ---
 
 #Hello World

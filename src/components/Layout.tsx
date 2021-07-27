@@ -1,17 +1,17 @@
-import React, { Fragment } from "react";
-import styled from "styled-components";
+import React, { Fragment } from "react"
+import styled from "styled-components"
 
-import SEO from "./Seo";
-import Header from "./Header";
-import Footer from "./Footer";
-import Container from "./Container";
-import GlobalStyle from "./global-styles";
+import SEO from "./Seo"
+import Header from "./Header"
+import Footer from "./Footer"
+import Container from "./Container"
+import GlobalStyle from "./global-styles"
 
 const Layout: React.FC<{
-  children: React.ReactChildren;
-  title: string;
-  description: string;
-  socialImage: string;
+  children: React.ReactChildren
+  title: string
+  description: string
+  socialImage: string
 }> = ({ children, title, description, socialImage = "" }) => {
   return (
     <Fragment>
@@ -25,10 +25,10 @@ const Layout: React.FC<{
         <Footer />
       </LayoutWrapper>
     </Fragment>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
 
 const LayoutWrapper = styled.div`
   min-height: 100vh;
@@ -43,4 +43,4 @@ const LayoutWrapper = styled.div`
   & footer {
     margin-top: auto;
   }
-`;
+`

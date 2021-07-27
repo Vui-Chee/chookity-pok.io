@@ -1,8 +1,8 @@
-import React from "react";
-import { Ghost } from "react-kawaii";
-import styled from "styled-components";
+import React from "react"
+import { Ghost } from "react-kawaii"
+import styled from "styled-components"
 
-import Layout from "../components/Layout";
+import Layout from "../components/Layout"
 
 const NotFoundPage = () => {
   return (
@@ -13,13 +13,13 @@ const NotFoundPage = () => {
         <p>404. Page not found</p>
       </NotFoundPageWrapper>
     </Layout>
-  );
-};
+  )
+}
 
-export default NotFoundPage;
+export default NotFoundPage
 
 const NotFoundPageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+`

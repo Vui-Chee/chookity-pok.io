@@ -1,18 +1,18 @@
-import React from "react";
-import { graphql } from "gatsby";
-import { useForm } from "react-hook-form";
+import React from "react"
+import { graphql } from "gatsby"
+import { useForm } from "react-hook-form"
 import {
   useNetlifyForm,
   NetlifyFormProvider,
   NetlifyFormComponent,
   Honeypot,
-} from "react-netlify-forms";
-import styled from "styled-components";
+} from "react-netlify-forms"
+import styled from "styled-components"
 
-import Layout from "../components/Layout";
+import Layout from "../components/Layout"
 
 const ContactTemplate = ({ data }) => {
-  const { html, frontmatter } = data.markdownRemark;
+  const { html, frontmatter } = data.markdownRemark
 
   return (
     <Layout title={frontmatter.title}>
@@ -21,22 +21,22 @@ const ContactTemplate = ({ data }) => {
         <ContactForm />
       </ContactWrapper>
     </Layout>
-  );
-};
+  )
+}
 
-export default ContactTemplate;
+export default ContactTemplate
 
 const ContactForm = () => {
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, errors } = useForm()
   const netlify = useNetlifyForm({
     name: "Contact",
     action: "/thanks",
     honeypotName: "bot-field",
-  });
+  })
   const onSubmit = (data) => {
-    netlify.handleSubmit(null, data);
-    console.log(data);
-  };
+    netlify.handleSubmit(null, data)
+    console.log(data)
+  }
 
   return (
     <FormWrapper>
@@ -104,8 +104,8 @@ const ContactForm = () => {
         </NetlifyFormComponent>
       </NetlifyFormProvider>
     </FormWrapper>
-  );
-};
+  )
+}
 
 const ContactWrapper = styled.div`
   display: flex;
@@ -131,7 +131,7 @@ const ContactWrapper = styled.div`
       width: 100%;
     }
   }
-`;
+`
 
 const ContactCopy = styled.div`
   max-width: 45ch;
@@ -139,7 +139,7 @@ const ContactCopy = styled.div`
   & p {
     font-size: var(--size-400);
   }
-`;
+`
 
 const FormWrapper = styled.div`
   max-width: 45ch;
@@ -149,7 +149,7 @@ const FormWrapper = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
-`;
+`
 
 const FormGroup = styled.div`
   display: flex;
@@ -178,27 +178,27 @@ const FormGroup = styled.div`
     outline: none;
     border: 2px solid #80576e;
   }
-`;
+`
 
 const FormErrorMessage = styled.span`
   color: red;
   font-size: var(--size-300);
   opacity: 0.7;
-`;
+`
 
 const FormFeedbackWrapper = styled.div`
   margin-top: 1rem;
   text-transform: uppercase;
   font-size: var(--size-300);
-`;
+`
 
 const FormSucessFeedback = styled.span`
   color: green;
-`;
+`
 
 const FormErrorFeedback = styled.span`
   color: red;
-`;
+`
 
 const FormButton = styled.button`
   margin-top: 1rem;
@@ -210,7 +210,7 @@ const FormButton = styled.button`
   border: 1px solid rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   border-radius: 4px;
-`;
+`
 
 export const pageQuery = graphql`
   query($slug: String!) {
@@ -221,4 +221,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

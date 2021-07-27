@@ -1,15 +1,15 @@
-const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const path = require(`path`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 const toKebabCase = (str) => {
   return str
     .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
     .map((x) => x.toLowerCase())
-    .join('-');
-};
+    .join("-")
+}
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
 
   const result = await graphql(
     `
@@ -38,38 +38,38 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
     `
-  );
+  )
 
   if (result.errors) {
     reporter.panicOnBuild(
       `There was an error loading your blog posts`,
       result.errors
-    );
-    return;
+    )
+    return
   }
 
-  const tags = result.data.tagsGroup.group;
-  const allMarkdownNodes = result.data.allMarkdownRemark.nodes;
+  const tags = result.data.tagsGroup.group
+  const allMarkdownNodes = result.data.allMarkdownRemark.nodes
 
   const blogMarkdownNodes = allMarkdownNodes.filter(
     (node) => node.fields.contentType === `posts`
-  );
+  )
 
   const pageMarkdownNodes = allMarkdownNodes.filter(
     (node) => node.fields.contentType === `pages`
-  );
+  )
 
   if (blogMarkdownNodes.length > 0) {
     blogMarkdownNodes.forEach((node, index) => {
-      let prevSlug = null;
-      let nextSlug = null;
+      let prevSlug = null
+      let nextSlug = null
 
       if (index > 0) {
-        prevSlug = blogMarkdownNodes[index - 1].fields.slug;
+        prevSlug = blogMarkdownNodes[index - 1].fields.slug
       }
 
       if (index < blogMarkdownNodes.length - 1) {
-        nextSlug = blogMarkdownNodes[index + 1].fields.slug;
+        nextSlug = blogMarkdownNodes[index + 1].fields.slug
       }
 
       createPage({
@@ -80,14 +80,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           prevSlug: prevSlug,
           nextSlug: nextSlug,
         },
-      });
-    });
+      })
+    })
   }
 
   if (pageMarkdownNodes.length > 0) {
     pageMarkdownNodes.forEach((node) => {
       if (node.frontmatter.template) {
-        const templateFile = `${String(node.frontmatter.template)}.js`;
+        const templateFile = `${String(node.frontmatter.template)}.js`
 
         createPage({
           path: `${node.fields.slug}`,
@@ -95,9 +95,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           context: {
             slug: `${node.fields.slug}`,
           },
-        });
+        })
       }
-    });
+    })
   }
 
   tags.forEach((tag) => {
@@ -107,47 +107,47 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       context: {
         tag: tag.fieldValue,
       },
-    });
-  });
-};
+    })
+  })
+}
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
+  const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
     const relativeFilePath = createFilePath({
       node,
       getNode,
-    });
+    })
 
-    const fileNode = getNode(node.parent);
+    const fileNode = getNode(node.parent)
 
     createNodeField({
       node,
       name: `contentType`,
       value: fileNode.sourceInstanceName,
-    });
+    })
 
-    if (fileNode.sourceInstanceName === 'posts') {
+    if (fileNode.sourceInstanceName === "posts") {
       createNodeField({
         name: `slug`,
         node,
         value: `/blog${relativeFilePath}`,
-      });
+      })
     }
 
-    if (fileNode.sourceInstanceName === 'pages') {
+    if (fileNode.sourceInstanceName === "pages") {
       createNodeField({
         name: `slug`,
         node,
         value: relativeFilePath,
-      });
+      })
     }
   }
-};
+}
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
+  const { createTypes } = actions
 
   createTypes(`
     type SiteSiteMetadata {
@@ -182,5 +182,5 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
       contentType: String
     }
-  `);
-};
+  `)
+}

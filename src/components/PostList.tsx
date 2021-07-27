@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
+import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
 
-import Tags from "./Tags";
+import Tags from "./Tags"
 
 const PostList = ({ posts }) => {
   const PostList = posts.map(({ frontmatter, fields, excerpt, timeToRead }) => {
-    const { title, tags, date, description } = frontmatter;
-    const { slug } = fields;
+    const { title, tags, date, description } = frontmatter
+    const { slug } = fields
 
     return (
       <PostListItem
@@ -20,13 +20,13 @@ const PostList = ({ posts }) => {
         description={description}
         excerpt={excerpt}
       />
-    );
-  });
+    )
+  })
 
-  return <StyledPostList>{PostList}</StyledPostList>;
-};
+  return <StyledPostList>{PostList}</StyledPostList>
+}
 
-export default PostList;
+export default PostList
 
 const PostListItem = ({
   title,
@@ -55,8 +55,8 @@ const PostListItem = ({
         <span>{timeToRead} mins</span>
       </PostListMeta>
     </StyledPostListItem>
-  );
-};
+  )
+}
 
 const StyledPostList = styled.ul`
   padding: 0;
@@ -71,7 +71,7 @@ const StyledPostList = styled.ul`
       display: block;
     }
   }
-`;
+`
 
 const StyledPostListItem = styled.li`
   position: relative;
@@ -92,7 +92,7 @@ const StyledPostListItem = styled.li`
       margin-top: var(--size-600);
     }
   }
-`;
+`
 
 const PostListTitle = styled.h2`
   line-height: 1.2;
@@ -115,12 +115,12 @@ const PostListTitle = styled.h2`
     left: 0;
     right: 0;
   }
-`;
+`
 
 const PostListExcerpt = styled.p`
   margin-top: auto;
   font-size: var(--size-400);
-`;
+`
 
 const PostListMeta = styled.div`
   margin-top: 2rem;
@@ -128,4 +128,4 @@ const PostListMeta = styled.div`
   font-size: var(--size-300);
   display: flex;
   justify-content: space-between;
-`;
+`
