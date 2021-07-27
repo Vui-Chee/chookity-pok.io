@@ -1,8 +1,9 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import Layout from '../components/layout';
-import styled from 'styled-components';
-import Tags from '../components/tags';
+import React from "react";
+import { Link, graphql } from "gatsby";
+import styled from "styled-components";
+
+import Layout from "../components/Layout";
+import Tags from "../components/Tags";
 
 const PostTemplate = ({ data }) => {
   const { frontmatter, excerpt, html } = data.markdownRemark;
@@ -14,7 +15,7 @@ const PostTemplate = ({ data }) => {
       title={frontmatter.title}
       description={frontmatter.description || excerpt}
       socialImage={
-        frontmatter.social_image ? frontmatter.social_image.absolutePath : ''
+        frontmatter.social_image ? frontmatter.social_image.absolutePath : ""
       }
     >
       <PostWrapper>
@@ -114,7 +115,7 @@ const PostContent = styled.section`
   }
 
   code {
-    font-family: 'Source Sans Pro', monospace;
+    font-family: "Source Sans Pro", monospace;
     overflow-x: auto;
     white-space: pre-wrap;
   }
@@ -165,7 +166,7 @@ const PostPagination = styled.nav`
   }
 
   & a::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;

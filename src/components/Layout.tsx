@@ -1,12 +1,18 @@
-import React, { Fragment } from 'react';
-import SEO from './seo';
-import Header from './header';
-import Footer from './footer';
-import Container from './container';
-import GlobalStyle from './global-styles';
-import styled from 'styled-components';
+import React, { Fragment } from "react";
+import styled from "styled-components";
 
-const Layout = ({ children, title, description, socialImage = '' }) => {
+import SEO from "./Seo";
+import Header from "./Header";
+import Footer from "./Footer";
+import Container from "./Container";
+import GlobalStyle from "./global-styles";
+
+const Layout: React.FC<{
+  children: React.ReactChildren;
+  title: string;
+  description: string;
+  socialImage: string;
+}> = ({ children, title, description, socialImage = "" }) => {
   return (
     <Fragment>
       <GlobalStyle />
