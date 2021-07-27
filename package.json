@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.2",
+    "@types/react-kawaii": "^0.11.1",
     "@types/styled-components": "^5.1.11",
     "prettier": "2.2.1",
     "typescript": "^4.3.5"
