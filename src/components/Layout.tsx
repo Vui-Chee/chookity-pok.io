@@ -8,11 +8,10 @@ import Container from "./Container"
 import GlobalStyle from "./global-styles"
 
 const Layout: React.FC<{
-  children: React.ReactChildren
   title: string
-  description: string
-  socialImage: string
-}> = ({ children, title, description, socialImage = "" }) => {
+  socialImage?: string
+  description?: string
+}> = ({ children, title, description = "", socialImage = "" }) => {
   return (
     <Fragment>
       <GlobalStyle />
