@@ -50,9 +50,9 @@ const ContactForm = () => {
               id="name"
               name="name"
               type="text"
-              ref={register({ required: "Name is required" })}
+              {...register("name", { required: "Name is required" })}
             />
-            {errors.name && (
+            {errors && errors.name && (
               <FormErrorMessage>{errors.name.message}</FormErrorMessage>
             )}
           </FormGroup>
@@ -63,7 +63,7 @@ const ContactForm = () => {
               id="email"
               name="email"
               type="text"
-              ref={register({
+              {...register("email", {
                 required: "Email is required.",
                 pattern: {
                   message: "Email is not valid.",
@@ -71,7 +71,7 @@ const ContactForm = () => {
                 },
               })}
             />
-            {errors.email && (
+            {errors && errors.email && (
               <FormErrorMessage>{errors.email.message}</FormErrorMessage>
             )}
           </FormGroup>
@@ -82,9 +82,11 @@ const ContactForm = () => {
               id="message"
               name="message"
               rows="4"
-              ref={register({ required: "Message is required" })}
+              {...register("message", {
+                required: "Message is required",
+              })}
             />
-            {errors.message && (
+            {errors && errors.message && (
               <FormErrorMessage>{errors.message.message}</FormErrorMessage>
             )}
           </FormGroup>
@@ -213,7 +215,7 @@ const FormButton = styled.button`
 `
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
