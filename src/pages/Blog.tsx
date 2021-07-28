@@ -19,7 +19,7 @@ const Blog = ({ data }) => {
             color: inherit;
             text-transform: uppercase;
           `}
-          to="/tags"
+          to="/Tags"
         >
           view all tags
         </Link>

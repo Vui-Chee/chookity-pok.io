@@ -27,7 +27,7 @@ const Header = () => {
 
         <HeaderNavList>
           <HeaderNavListItem>
-            <Link to="/blog">Blog</Link>
+            <Link to="/Blog">Blog</Link>
           </HeaderNavListItem>
 
           <HeaderNavListItem>

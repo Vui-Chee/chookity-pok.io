@@ -29,7 +29,7 @@ const HomePage = ({ data }) => {
           margin-right: auto;
           width: fit-content;
         `}
-        to="/blog"
+        to="/Blog"
       >
         View All posts
       </StyledLink>
