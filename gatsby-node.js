@@ -74,7 +74,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: `${node.fields.slug}`,
-        component: path.resolve(`./src/templates/post-template.js`),
+        component: path.resolve(`./src/templates/post-template.tsx`),
         context: {
           slug: `${node.fields.slug}`,
           prevSlug: prevSlug,
@@ -87,7 +87,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   if (pageMarkdownNodes.length > 0) {
     pageMarkdownNodes.forEach((node) => {
       if (node.frontmatter.template) {
-        const templateFile = `${String(node.frontmatter.template)}.js`
+        const templateFile = `${String(node.frontmatter.template)}.tsx`
 
         createPage({
           path: `${node.fields.slug}`,
@@ -103,7 +103,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   tags.forEach((tag) => {
     createPage({
       path: `/tags/${toKebabCase(tag.fieldValue)}/`,
-      component: path.resolve(`./src/templates/tags-template.js`),
+      component: path.resolve(`./src/templates/tags-template.tsx`),
       context: {
         tag: tag.fieldValue,
       },
