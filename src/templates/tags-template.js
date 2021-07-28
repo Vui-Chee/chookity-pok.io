@@ -25,7 +25,7 @@ const TagsTemplate = ({ pageContext, data }) => {
             color: inherit;
             text-transform: uppercase;
           `}
-          to="/tags"
+          to="/Tags"
         >
           view all tags
         </Link>
@@ -36,7 +36,7 @@ const TagsTemplate = ({ pageContext, data }) => {
             margin-top: var(--size-400);
             display: inline-block;
           `}
-          to="/tags"
+          to="/Tags"
         >
           View All tags
         </StyledLink>
@@ -56,7 +56,7 @@ const Title = styled.h1`
 `
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query ($tag: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
