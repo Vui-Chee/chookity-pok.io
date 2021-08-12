@@ -27,7 +27,11 @@ const ContactTemplate = ({ data }) => {
 export default ContactTemplate
 
 const ContactForm = () => {
-  const { register, handleSubmit, errors } = useForm()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
   const netlify = useNetlifyForm({
     name: "Contact",
     action: "/thanks",
@@ -81,7 +85,7 @@ const ContactForm = () => {
             <textarea
               id="message"
               name="message"
-              rows="4"
+              rows={4}
               {...register("message", {
                 required: "Message is required",
               })}
