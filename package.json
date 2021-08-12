@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Vui Chee <vuicheesiew@gmail.com>",
   "dependencies": {
+    "@apollo/client": "^3.4.7",
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^3.0.1",
     "gatsby-plugin-feed": "^3.0.0",
@@ -25,6 +26,7 @@
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-remark": "^4.7.0",
     "gatsby-transformer-sharp": "^3.0.0",
+    "graphql": "^15.5.1",
     "netlify-cms-app": "^2.14.26",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
@@ -36,6 +38,11 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.0.1",
+    "@graphql-codegen/introspection": "^2.0.0",
+    "@graphql-codegen/typescript": "^2.0.0",
+    "@graphql-codegen/typescript-operations": "^2.0.1",
+    "@graphql-codegen/typescript-react-apollo": "^3.0.0",
     "@types/react-helmet": "^6.1.2",
     "@types/react-kawaii": "^0.11.1",
     "@types/styled-components": "^5.1.11",
@@ -59,6 +66,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "gql-types": "graphql-codegen --config codegen.yml"
   }
 }
