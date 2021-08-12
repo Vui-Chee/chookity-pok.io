@@ -5,10 +5,10 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Container from "./Container"
 
-const Header = () => {
+const Header: React.FC = () => {
   const { site } = useStaticQuery(
     graphql`
-      query {
+      query Header {
         site {
           siteMetadata {
             title
@@ -45,7 +45,7 @@ const Header = () => {
 
 export default Header
 
-const HeaderNavList = ({ children }) => {
+const HeaderNavList: React.FC = ({ children }) => {
   return (
     <StyledNav>
       <StyledNavList>{children}</StyledNavList>
@@ -53,7 +53,7 @@ const HeaderNavList = ({ children }) => {
   )
 }
 
-const HeaderNavListItem = ({ children }) => {
+const HeaderNavListItem: React.FC = ({ children }) => {
   return <StyledNavListItem>{children}</StyledNavListItem>
 }
 

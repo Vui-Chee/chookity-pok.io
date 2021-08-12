@@ -57,7 +57,7 @@ const AboutCopy = styled.div`
 `
 
 export const pageQuery = graphql`
-  query ($slug: String!) {
+  query AboutTemplate($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

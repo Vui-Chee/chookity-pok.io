@@ -63,7 +63,7 @@ const Intro = styled.div`
 `
 
 export const pageQuery = graphql`
-  query ($slug: String!) {
+  query MainTemplate($slug: String!) {
     site {
       siteMetadata {
         title

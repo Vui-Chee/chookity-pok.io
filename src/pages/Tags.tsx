@@ -33,7 +33,7 @@ const Tags = ({ data }) => {
 export default Tags
 
 export const pageQuery = graphql`
-  query {
+  query Tags {
     allMarkdownRemark(limit: 2000) {
       group(field: frontmatter___tags) {
         fieldValue

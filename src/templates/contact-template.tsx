@@ -219,7 +219,7 @@ const FormButton = styled.button`
 `
 
 export const pageQuery = graphql`
-  query ($slug: String!) {
+  query ContactTemplate($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

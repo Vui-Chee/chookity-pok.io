@@ -14,7 +14,7 @@ const SEO: React.FC<{
 }> = ({ description, title, lang = "en", meta = [] }) => {
   const { site } = useStaticQuery(
     graphql`
-      query {
+      query Seo {
         site {
           siteMetadata {
             title

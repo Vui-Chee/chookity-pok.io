@@ -44,7 +44,7 @@ const HeaderWrapper = styled.div`
 `
 
 export const homePageQuery = graphql`
-  query {
+  query Blog {
     site {
       siteMetadata {
         title

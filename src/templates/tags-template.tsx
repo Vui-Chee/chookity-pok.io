@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 import PostList from "../components/PostList"
 import StyledLink from "../components/styled-link"
 
-const TagsTemplate = ({ pageContext, data }) => {
+const TagsTemplate: React.FC = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { totalCount } = data.allMarkdownRemark
   const posts = data.allMarkdownRemark.nodes
@@ -56,7 +56,7 @@ const Title = styled.h1`
 `
 
 export const pageQuery = graphql`
-  query ($tag: String) {
+  query TagsTemplate($tag: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
