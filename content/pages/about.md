@@ -1,6 +1,6 @@
 ---
 title: About Mee
-template: about
+template: About
 profile_image: /media/profile-image.jpg
 ---
 
