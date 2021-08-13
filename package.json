@@ -43,6 +43,8 @@
     "@graphql-codegen/typescript": "^2.0.0",
     "@graphql-codegen/typescript-operations": "^2.0.1",
     "@graphql-codegen/typescript-react-apollo": "^3.0.0",
+    "@types/react": "^17.0.17",
+    "@types/react-dom": "^17.0.9",
     "@types/react-helmet": "^6.1.2",
     "@types/react-kawaii": "^0.11.1",
     "@types/styled-components": "^5.1.11",
