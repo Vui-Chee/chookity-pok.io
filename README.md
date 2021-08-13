@@ -18,7 +18,7 @@ A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism UI.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yinkakun/gatsby-starter-glass
+git clone [to be filled with actual repo]
 
 # 2. Navigate into repository
 cd gatsby-starter-glass
@@ -44,13 +44,12 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Glass`,
     author: {
-      name: `Yinka Adedire`,
+      name: `Vui Chee`,
       summary: `self-taught front-end dev. jamstack enthusaist.`,
     },
     description: `A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism Ui.`,
     siteUrl: `[To be updated]`,
     social: {
-      twitter: `yinkakun`,
     },
   },
 

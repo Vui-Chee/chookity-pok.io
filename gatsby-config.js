@@ -2,26 +2,15 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Glass`,
     author: {
-      name: `Yinka Adedire`,
+      name: `Vui Chee`,
       summary: `Self-taught front-end web dev. JAMStack.`,
     },
     description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
     siteUrl: ``,
-    social: {
-      twitter: `yinkakun`,
-    },
     socialLinks: [
       {
         name: "github",
         url: "https://github.com",
-      },
-      {
-        name: "twitter",
-        url: "https://twitter.com",
-      },
-      {
-        name: "instagram",
-        url: "https://instagram.com",
       },
     ],
   },

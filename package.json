@@ -48,14 +48,14 @@
     "prettier": "2.3.2",
     "typescript": "^4.3.5"
   },
-  "homepage": "https://github.com/yinkakun/gatsby-starter-glass#readme",
+  "homepage": "",
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yinkakun/gatsby-starter-glass.git"
+    "url": ""
   },
   "scripts": {
     "build": "gatsby build",
