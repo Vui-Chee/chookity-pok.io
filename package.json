@@ -3,7 +3,7 @@
   "private": true,
   "description": "A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.",
   "version": "1.0.0",
-  "author": "Vui Chee <vuicheesiew@gmail.com>",
+  "author": "Vui Chee",
   "dependencies": {
     "@apollo/client": "^3.4.7",
     "babel-plugin-styled-components": "^1.12.0",
