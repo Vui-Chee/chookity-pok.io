@@ -6,7 +6,7 @@ module.exports = {
       summary: `Self-taught front-end web dev. JAMStack.`,
     },
     description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
-    siteUrl: `https://gatsbyglass.netlify.app`,
+    siteUrl: ``,
     social: {
       twitter: `yinkakun`,
     },
@@ -78,16 +78,6 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
-      },
-    },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/netlify-cms/index.js`,
-        enableIdentityWidget: true,
-        publicPath: "admin",
-        htmlTitle: "Content Manager",
-        includeRobots: false,
       },
     },
     {

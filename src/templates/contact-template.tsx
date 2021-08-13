@@ -1,12 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { useForm } from "react-hook-form"
-import {
-  useNetlifyForm,
-  NetlifyFormProvider,
-  NetlifyFormComponent,
-  Honeypot,
-} from "react-netlify-forms"
 import styled from "styled-components"
 
 import Layout from "../components/Layout"
@@ -31,86 +25,63 @@ export default ContactTemplate
 const ContactForm = () => {
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm()
-  const netlify = useNetlifyForm({
-    name: "Contact",
-    action: "/thanks",
-    honeypotName: "bot-field",
-  })
-  const onSubmit = (data: ContactTemplateQueryResult["data"]) => {
-    netlify.handleSubmit(null, data)
-    console.log(data)
-  }
 
   return (
     <FormWrapper>
-      <NetlifyFormProvider {...netlify}>
-        <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
-          <Honeypot />
+      <FormGroup>
+        <label htmlFor="name">Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          {...register("name", { required: "Name is required" })}
+        />
+        {errors && errors.name && (
+          <FormErrorMessage>{errors.name.message}</FormErrorMessage>
+        )}
+      </FormGroup>
 
-          <FormGroup>
-            <label htmlFor="name">Name</label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              {...register("name", { required: "Name is required" })}
-            />
-            {errors && errors.name && (
-              <FormErrorMessage>{errors.name.message}</FormErrorMessage>
-            )}
-          </FormGroup>
+      <FormGroup>
+        <label htmlFor="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="text"
+          {...register("email", {
+            required: "Email is required.",
+            pattern: {
+              message: "Email is not valid.",
+              value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
+            },
+          })}
+        />
+        {errors && errors.email && (
+          <FormErrorMessage>{errors.email.message}</FormErrorMessage>
+        )}
+      </FormGroup>
 
-          <FormGroup>
-            <label htmlFor="email">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="text"
-              {...register("email", {
-                required: "Email is required.",
-                pattern: {
-                  message: "Email is not valid.",
-                  value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
-                },
-              })}
-            />
-            {errors && errors.email && (
-              <FormErrorMessage>{errors.email.message}</FormErrorMessage>
-            )}
-          </FormGroup>
+      <FormGroup>
+        <label htmlFor="message">Your message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows={4}
+          {...register("message", {
+            required: "Message is required",
+          })}
+        />
+        {errors && errors.message && (
+          <FormErrorMessage>{errors.message.message}</FormErrorMessage>
+        )}
+      </FormGroup>
 
-          <FormGroup>
-            <label htmlFor="message">Your message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows={4}
-              {...register("message", {
-                required: "Message is required",
-              })}
-            />
-            {errors && errors.message && (
-              <FormErrorMessage>{errors.message.message}</FormErrorMessage>
-            )}
-          </FormGroup>
+      <FormFeedbackWrapper>
+        {/* TODO: Feedback after form submission. (from response) */}
+      </FormFeedbackWrapper>
 
-          <FormFeedbackWrapper>
-            {netlify.success && (
-              <FormSucessFeedback>Message sent succesfully</FormSucessFeedback>
-            )}
-            {netlify.error && (
-              <FormErrorFeedback>
-                Something went wrong, please try again.
-              </FormErrorFeedback>
-            )}
-          </FormFeedbackWrapper>
-
-          <FormButton type="submit">Send Message</FormButton>
-        </NetlifyFormComponent>
-      </NetlifyFormProvider>
+      <FormButton type="submit">Send Message</FormButton>
     </FormWrapper>
   )
 }
