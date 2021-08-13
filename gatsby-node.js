@@ -74,7 +74,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: `${node.fields.slug}`,
-        component: path.resolve(`./src/templates/post-template.tsx`),
+        component: path.resolve(`./src/templates/Post.tsx`),
         context: {
           slug: `${node.fields.slug}`,
           prevSlug: prevSlug,
@@ -103,7 +103,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   tags.forEach((tag) => {
     createPage({
       path: `/tags/${toKebabCase(tag.fieldValue)}/`,
-      component: path.resolve(`./src/templates/tags-template.tsx`),
+      component: path.resolve(`./src/templates/Tags.tsx`),
       context: {
         tag: tag.fieldValue,
       },

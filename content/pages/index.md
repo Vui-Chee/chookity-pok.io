@@ -1,5 +1,5 @@
 ---
-template: "index-template"
+template: "index"
 title: "Gatsby Starter Glass"
 ---
 
