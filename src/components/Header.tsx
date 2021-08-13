@@ -8,7 +8,7 @@ import Container from "./Container"
 const Header: React.FC = () => {
   const { site } = useStaticQuery(
     graphql`
-      query Header {
+      query HeaderQuery {
         site {
           siteMetadata {
             title

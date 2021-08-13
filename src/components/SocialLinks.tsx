@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const SocialLinks = () => {
   const data = useStaticQuery(graphql`
-    query SocialLinks {
+    query SocialLinksQuery {
       site {
         siteMetadata {
           socialLinks {
