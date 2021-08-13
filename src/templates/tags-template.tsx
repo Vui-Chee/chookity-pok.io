@@ -5,8 +5,12 @@ import styled from "styled-components"
 import Layout from "../components/Layout"
 import PostList from "../components/PostList"
 import StyledLink from "../components/styled-link"
+import { SitePageContext, TagsTemplateQueryResult } from "../types"
 
-const TagsTemplate: React.FC = ({ pageContext, data }) => {
+const TagsTemplate: React.FC<{
+  pageContext: SitePageContext
+  data: TagsTemplateQueryResult["data"]
+}> = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { totalCount } = data.allMarkdownRemark
   const posts = data.allMarkdownRemark.nodes

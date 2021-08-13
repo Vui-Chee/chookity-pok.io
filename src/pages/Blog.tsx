@@ -4,8 +4,9 @@ import styled from "styled-components"
 
 import Layout from "../components/Layout"
 import PostList from "../components/PostList"
+import { BlogQueryResult } from "../types"
 
-const Blog = ({ data }) => {
+const Blog: React.FC<{ data: BlogQueryResult["data"] }> = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
 
   return (

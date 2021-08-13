@@ -2,14 +2,14 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const toKebabCase = (str) => {
+const toKebabCase = (str: string): string => {
   return str
     .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
     .map((x) => x.toLowerCase())
     .join("-")
 }
 
-const Tags = ({ tags }) => {
+const Tags: React.FC<{ tags: Array<string> }> = ({ tags }) => {
   return (
     <div>
       {tags &&

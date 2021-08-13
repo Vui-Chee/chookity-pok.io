@@ -2,9 +2,19 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+import { BlogQueryResult } from "../types"
 import Tags from "./Tags"
 
-const PostList = ({ posts }) => {
+// Extract types for each post
+type MarkdownNodes = BlogQueryResult["data"]["allMarkdownRemark"]["nodes"]
+type MarkdownNode = ArrayElement<MarkdownNodes>
+type SinglePost = Pick<MarkdownNode["fields"], "slug"> &
+  Pick<MarkdownNode["frontmatter"], "title" | "date" | "description" | "tags"> &
+  Pick<MarkdownNode, "timeToRead" | "excerpt">
+
+const PostList: React.FC<{
+  posts: MarkdownNodes
+}> = ({ posts }) => {
   const PostList = posts.map(({ frontmatter, fields, excerpt, timeToRead }) => {
     const { title, tags, date, description } = frontmatter
     const { slug } = fields
@@ -28,7 +38,7 @@ const PostList = ({ posts }) => {
 
 export default PostList
 
-const PostListItem = ({
+const PostListItem: React.FC<SinglePost> = ({
   title,
   date,
   timeToRead,

@@ -5,8 +5,11 @@ import styled from "styled-components"
 import Layout from "../components/Layout"
 import PostList from "../components/PostList"
 import StyledLink from "../components/styled-link"
+import { MainTemplateQueryResult } from "../types"
 
-const HomePage = ({ data }) => {
+const HomePage: React.FC<{ data: MainTemplateQueryResult["data"] }> = ({
+  data,
+}) => {
   const posts = data.allMarkdownRemark.nodes
   const intro = data.markdownRemark.html
   const title = data.markdownRemark.frontmatter.title

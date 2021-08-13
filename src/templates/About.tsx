@@ -1,13 +1,16 @@
-import React from "react"
 import { graphql } from "gatsby"
+import { GatsbyImage, ImageDataLike, getImage } from "gatsby-plugin-image"
+import React from "react"
 import styled from "styled-components"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout"
+import { AboutTemplateQueryResult } from "../types"
 
-const AboutTemplate = ({ data }) => {
+const AboutTemplate: React.FC<{ data: AboutTemplateQueryResult["data"] }> = ({
+  data,
+}) => {
   const { html, frontmatter } = data.markdownRemark
-  const profileImage = getImage(frontmatter.profile_image)
+  const profileImage = getImage(frontmatter.profile_image as ImageDataLike)
 
   return (
     <Layout title={frontmatter.title}>

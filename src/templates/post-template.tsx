@@ -4,8 +4,11 @@ import styled from "styled-components"
 
 import Layout from "../components/Layout"
 import Tags from "../components/Tags"
+import { PostBySlugQueryResult } from "../types"
 
-const PostTemplate = ({ data }) => {
+const PostTemplate: React.FC<{ data: PostBySlugQueryResult["data"] }> = ({
+  data,
+}) => {
   const { frontmatter, excerpt, html } = data.markdownRemark
   const prev = data.prev
   const next = data.next

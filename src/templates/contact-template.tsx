@@ -10,19 +10,21 @@ import {
 import styled from "styled-components"
 
 import Layout from "../components/Layout"
+import { ContactTemplateQueryResult } from "../types"
 
-const ContactTemplate = ({ data }) => {
-  const { html, frontmatter } = data.markdownRemark
+const ContactTemplate: React.FC<{ data: ContactTemplateQueryResult["data"] }> =
+  ({ data }) => {
+    const { html, frontmatter } = data.markdownRemark
 
-  return (
-    <Layout title={frontmatter.title}>
-      <ContactWrapper>
-        <ContactCopy dangerouslySetInnerHTML={{ __html: html }} />
-        <ContactForm />
-      </ContactWrapper>
-    </Layout>
-  )
-}
+    return (
+      <Layout title={frontmatter.title}>
+        <ContactWrapper>
+          <ContactCopy dangerouslySetInnerHTML={{ __html: html }} />
+          <ContactForm />
+        </ContactWrapper>
+      </Layout>
+    )
+  }
 
 export default ContactTemplate
 
@@ -37,7 +39,7 @@ const ContactForm = () => {
     action: "/thanks",
     honeypotName: "bot-field",
   })
-  const onSubmit = (data) => {
+  const onSubmit = (data: ContactTemplateQueryResult["data"]) => {
     netlify.handleSubmit(null, data)
     console.log(data)
   }

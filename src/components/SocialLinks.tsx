@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 
+import { SiteSiteMetadataSocialLinks } from "../types"
+
 const SocialLinks = () => {
   const data = useStaticQuery(graphql`
     query SocialLinksQuery {
@@ -16,13 +18,15 @@ const SocialLinks = () => {
     }
   `)
 
-  const socialLinks = data.site.siteMetadata.socialLinks.map((link) => {
-    return (
-      <SocialLinkItem key={link.name}>
-        <a href={link.url}>{link.name}</a>
-      </SocialLinkItem>
-    )
-  })
+  const socialLinks = data.site.siteMetadata.socialLinks.map(
+    (link: SiteSiteMetadataSocialLinks) => {
+      return (
+        <SocialLinkItem key={link.name}>
+          <a href={link.url}>{link.name}</a>
+        </SocialLinkItem>
+      )
+    }
+  )
 
   return <SocialLinkList>{socialLinks}</SocialLinkList>
 }
