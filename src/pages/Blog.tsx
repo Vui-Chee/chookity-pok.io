@@ -20,7 +20,7 @@ const Blog: React.FC<{ data: BlogQueryResult["data"] }> = ({ data }) => {
             color: inherit;
             text-transform: uppercase;
           `}
-          to="/Tags"
+          to="/tags"
         >
           view all tags
         </Link>

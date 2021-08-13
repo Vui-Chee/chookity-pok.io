@@ -29,7 +29,7 @@ const TagsTemplate: React.FC<{
             color: inherit;
             text-transform: uppercase;
           `}
-          to="/Tags"
+          to="/tags"
         >
           view all tags
         </Link>
@@ -40,7 +40,7 @@ const TagsTemplate: React.FC<{
             margin-top: var(--size-400);
             display: inline-block;
           `}
-          to="/Tags"
+          to="/tags"
         >
           View All tags
         </StyledLink>

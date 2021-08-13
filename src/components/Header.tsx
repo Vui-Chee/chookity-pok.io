@@ -27,7 +27,7 @@ const Header: React.FC = () => {
 
         <HeaderNavList>
           <HeaderNavListItem>
-            <Link to="/Blog">Blog</Link>
+            <Link to="/blog">Blog</Link>
           </HeaderNavListItem>
 
           <HeaderNavListItem>

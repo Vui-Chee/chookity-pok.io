@@ -32,7 +32,7 @@ const HomePage: React.FC<{ data: MainTemplateQueryResult["data"] }> = ({
           margin-right: auto;
           width: fit-content;
         `}
-        to="/Blog"
+        to="/blog"
       >
         View All posts
       </StyledLink>
