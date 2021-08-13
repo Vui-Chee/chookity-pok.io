@@ -1,8 +1,11 @@
-# Gatsby Starter Glass
+# chookity-pok.io
 
-A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism UI.
+My personal website and blog. The theme is based off [gatsby-starter-glass](https://github.com/yinkakun/gatsby-starter-glass)
+with tweaks such as converting to typescript, graphql codegen and other personal thematic changes.
 
-[View Live Demo](https://gatsbyglass.netlify.app)
+To run locally, `yarn` and then `yarn dev`. Then navigate to http://localhost:8000.
+
+[View Live Demo](https://chookity-pok-io.vercel.app/)
 
 ![demo site screenshot](./screenshot.png)
 
@@ -14,25 +17,6 @@ A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism UI.
 - Easy to deploy
 - Syntax highlighting via PrismJS
 
-## Local Install
-
-```bash
-# 1. Clone the repository
-git clone [to be filled with actual repo]
-
-# 2. Navigate into repository
-cd gatsby-starter-glass
-
-# 3. Install the dependencies
-yarn install
-
-# 4. Start the development server
-yarn start
-
-# 5. Start the build mode
-yarn  build
-```
-
 ## Configuration
 
 Within gatsby-config.js, you can specify information about your site (metadata) like the site title and description to properly generate meta tags.
@@ -42,13 +26,12 @@ Within gatsby-config.js, you can specify information about your site (metadata) 
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Glass`,
+    title: `Vui Chee's Personal Website`,
     author: {
       name: `Vui Chee`,
-      summary: `self-taught front-end dev. jamstack enthusaist.`,
+      summary: `Searching for meaning.`,
     },
-    description: `A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism Ui.`,
-    siteUrl: `[To be updated]`,
+    siteUrl: `https://chookity-pok-io.vercel.app/`,
     social: {
     },
   },
@@ -56,11 +39,6 @@ module.exports = {
   // ...
 }
 ```
-
-## Deployment
-
-- Generate a new repo from this repo which will copy all files from this repo to your newly created repo.
-
 ## Manually Editing contents
 
 ### Blog Posts
@@ -80,8 +58,3 @@ This top portion is the beginning of the post and will show up as the excerpt on
 ### Pages
 
 Homepage intro, Contact, and About page content can be updated in Markdown format at `content/pages`.
-
-## Built with
-
-- Gatsby for Static Site Generation
-- Styled Component for styling
