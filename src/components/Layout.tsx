@@ -19,9 +19,12 @@ const Layout: React.FC<{
       <GlobalStyle />
       <SEO title={title} description={description} socialImage={socialImage} />
       <LayoutWrapper
-        sx={(theme) => ({
-          ...theme.rawColors,
-        })}
+        sx={(theme) => {
+          console.log(theme.rawColors)
+          return {
+            ...theme.rawColors,
+          }
+        }}
       >
         <Header />
         <main>
