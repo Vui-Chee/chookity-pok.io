@@ -1,4 +1,3 @@
-/** @jsxImportSource theme-ui */
 import "react-toggle/style.css"
 import "./styles.css"
 
@@ -7,7 +6,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import React from "react"
 import Toggle from "react-toggle"
 import styled from "styled-components"
-import { useColorMode } from "theme-ui"
 
 import moon from "../../images/moon.png"
 import sun from "../../images/sun.png"
@@ -27,8 +25,10 @@ const SwitchIcon: React.FC<{
   />
 )
 
-const Header: React.FC = () => {
-  const [colorMode, setColorMode] = useColorMode()
+const Header: React.FC<{
+  colorMode?: string
+  toggleTheme?: () => void
+}> = ({ colorMode, toggleTheme }) => {
   const { site } = useStaticQuery(
     graphql`
       query HeaderQuery {
@@ -40,8 +40,6 @@ const Header: React.FC = () => {
       }
     `
   )
-
-  console.log(colorMode, colorMode === "dark")
 
   return (
     <StyledHeader>
@@ -65,17 +63,13 @@ const Header: React.FC = () => {
 
           <HeaderNavListItem>
             <Toggle
-              defaultChecked={colorMode === "dark"}
+              checked={colorMode === "dark"}
               className="theme-switcher"
               icons={{
                 checked: <SwitchIcon imageUrl={moon} />,
                 unchecked: <SwitchIcon imageUrl={sun} />,
               }}
-              onChange={() =>
-                setColorMode((prevMode) =>
-                  prevMode === "dark" ? "light" : "dark"
-                )
-              }
+              onChange={toggleTheme}
             />
           </HeaderNavListItem>
         </HeaderNavList>
@@ -95,16 +89,7 @@ const HeaderNavList: React.FC = ({ children }) => {
 }
 
 const HeaderNavListItem: React.FC = ({ children }) => {
-  return (
-    <StyledNavListItem
-      // For now, ensure each header item is aligned vertically centered.
-      sx={{
-        lineHeight: 0,
-      }}
-    >
-      {children}
-    </StyledNavListItem>
-  )
+  return <StyledNavListItem>{children}</StyledNavListItem>
 }
 
 const StyledHeader = styled.header`
@@ -143,6 +128,7 @@ const StyledNavList = styled.ul`
 `
 
 const StyledNavListItem = styled.li`
+  line-height: 0;
   &:not(:last-of-type) {
     margin-right: 2rem;
   }

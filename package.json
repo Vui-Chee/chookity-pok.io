@@ -15,7 +15,6 @@
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-plugin-styled-components": "^4.0.0",
-    "gatsby-plugin-theme-ui": "^0.10.1",
     "gatsby-plugin-typescript": "^3.10.0",
     "gatsby-remark-copy-linked-files": "^4.7.0",
     "gatsby-remark-images": "^5.7.0",
@@ -34,8 +33,7 @@
     "react-hook-form": "^7.12.1",
     "react-kawaii": "^0.17.0",
     "react-toggle": "^4.1.2",
-    "styled-components": "^5.2.1",
-    "theme-ui": "^0.10.0"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.0.1",

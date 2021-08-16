@@ -1,19 +1,26 @@
-/** @jsxImportSource theme-ui */
-
-import React, { Fragment } from "react"
-import styled from "styled-components"
+import React from "react"
+import styled, { ThemeProvider } from "styled-components"
 
 import GlobalStyle from "./global-styles"
 import Container from "./Container"
 import Footer from "./Footer"
 import Header from "./Header"
 import SEO from "./Seo"
+// import Theme from "./Theme"
 
-import { useThemeUI } from "theme-ui"
+export interface GlobalTheme {
+  [key: string]: {}
+}
 
-const theme = {
-  color: "yellow",
-  background: "green",
+export const themes: GlobalTheme = {
+  light: {
+    color: "#000",
+    background: "linear-gradient(315deg,#d9e4f5 0%,#f5e3e6 74%)",
+  },
+  dark: {
+    color: "#ffa7c4",
+    background: "#282c35",
+  },
 }
 
 const Layout: React.FC<{
@@ -21,47 +28,49 @@ const Layout: React.FC<{
   socialImage?: string
   description?: string
 }> = ({ children, title, description = "", socialImage = "" }) => {
-  // const context = useThemeUI()
+  const [colorMode, setColorMode] = React.useState("light")
 
-  const [currTheme, setCurrTheme] = React.useState("light")
   React.useEffect(() => {
-    const mode = localStorage.getItem("theme-ui-color-mode")
-    setCurrTheme(mode)
+    const mode = localStorage.getItem("theme")
+    if (!mode) {
+      localStorage.setItem("theme", colorMode)
+    } else {
+      setColorMode(mode)
+    }
   }, [])
 
-  console.log(currTheme)
+  const toggleTheme = () => {
+    if (colorMode === "dark") {
+      setColorMode("light")
+      localStorage.setItem("theme", "light")
+    } else {
+      setColorMode("dark")
+      localStorage.setItem("theme", "dark")
+    }
+  }
 
   return (
-    <Fragment>
+    <ThemeProvider theme={themes[colorMode]}>
       <GlobalStyle />
       <SEO title={title} description={description} socialImage={socialImage} />
-      <LayoutWrapper
-        theme={
-          currTheme === "dark"
-            ? {
-                color: "white",
-                background: "black",
-              }
-            : {
-                color: "black",
-                background: "white",
-              }
-        }
-      >
-        <Header />
+      <LayoutWrapper>
+        <Header colorMode={colorMode} toggleTheme={toggleTheme} />
         <main>
           <Container>{children}</Container>
         </main>
         <Footer />
       </LayoutWrapper>
-    </Fragment>
+    </ThemeProvider>
   )
 }
 
 export default Layout
 
 const LayoutWrapper = styled.div`
-  color: ${(props) => props.theme.color};
+  color: ${(props) => {
+    // console.log(props.theme)
+    return props.theme.color
+  }};
   background-color: ${(props) => props.theme.background};
 
   min-height: 100vh;

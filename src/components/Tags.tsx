@@ -1,5 +1,3 @@
-/** @jsxImportSource theme-ui */
-
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
@@ -17,12 +15,7 @@ const Tags: React.FC<{ tags: Array<string> }> = ({ tags }) => {
       {tags &&
         tags.map((tag) => {
           return (
-            <Tag
-              sx={(theme) => ({
-                backgroundColor: theme.rawColors.modes.tag.background,
-              })}
-              key={tag}
-            >
+            <Tag key={tag}>
               <Link to={`/tags/${toKebabCase(tag)}`}>{tag}</Link>
             </Tag>
           )
