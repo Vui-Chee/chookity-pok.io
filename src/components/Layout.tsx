@@ -9,11 +9,19 @@ import Footer from "./Footer"
 import Header from "./Header"
 import SEO from "./Seo"
 
+import { useThemeUI } from "theme-ui"
+
 const Layout: React.FC<{
   title: string
   socialImage?: string
   description?: string
 }> = ({ children, title, description = "", socialImage = "" }) => {
+  const context = useThemeUI()
+  React.useEffect(() => {
+    // testing only
+    console.log("on mount", context)
+  }, [])
+
   return (
     <Fragment>
       <GlobalStyle />
