@@ -28,3 +28,7 @@
 .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
   background-color: #0f1114;
 }
+
+.react-toggle:active .react-toggle-thumb {
+  box-shadow: 0px 0px 5px 5px #ffa7c4 !important;
+}
