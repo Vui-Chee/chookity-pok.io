@@ -49,9 +49,9 @@ const Layout: React.FC<{
   }
 
   return typeof window !== "undefined" ? (
-    <ThemeProvider theme={themes[localStorage.theme]}>
+    <ThemeProvider theme={themes[localStorage.theme || "light"]}>
       <GlobalStyle />
-      {/* <SEO title={title} description={description} socialImage={socialImage} /> */}
+      <SEO title={title} description={description} socialImage={socialImage} />
       <LayoutWrapper>
         <Header toggleTheme={toggleTheme} />
         <main>
