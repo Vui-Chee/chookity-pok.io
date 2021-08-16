@@ -48,7 +48,7 @@ const Layout: React.FC<{
     }
   }
 
-  return (
+  return typeof window !== "undefined" ? (
     <ThemeProvider theme={themes[localStorage.theme]}>
       <GlobalStyle />
       <SEO title={title} description={description} socialImage={socialImage} />
@@ -60,7 +60,7 @@ const Layout: React.FC<{
         <Footer />
       </LayoutWrapper>
     </ThemeProvider>
-  )
+  ) : null
 }
 
 export default Layout
