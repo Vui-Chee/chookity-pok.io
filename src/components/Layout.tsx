@@ -21,7 +21,15 @@ const Layout: React.FC<{
   socialImage?: string
   description?: string
 }> = ({ children, title, description = "", socialImage = "" }) => {
-  const context = useThemeUI()
+  // const context = useThemeUI()
+
+  const [currTheme, setCurrTheme] = React.useState("light")
+  React.useEffect(() => {
+    const mode = localStorage.getItem("theme-ui-color-mode")
+    setCurrTheme(mode)
+  }, [])
+
+  console.log(currTheme)
 
   return (
     <Fragment>
@@ -29,7 +37,7 @@ const Layout: React.FC<{
       <SEO title={title} description={description} socialImage={socialImage} />
       <LayoutWrapper
         theme={
-          context.colorMode === "dark"
+          currTheme === "dark"
             ? {
                 color: "white",
                 background: "black",
