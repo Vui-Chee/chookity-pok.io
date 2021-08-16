@@ -1,11 +1,13 @@
+/** @jsxImportSource theme-ui */
+
 import React, { Fragment } from "react"
 import styled from "styled-components"
 
-import SEO from "./Seo"
-import Header from "./Header"
-import Footer from "./Footer"
-import Container from "./Container"
 import GlobalStyle from "./global-styles"
+import Container from "./Container"
+import Footer from "./Footer"
+import Header from "./Header"
+import SEO from "./Seo"
 
 const Layout: React.FC<{
   title: string
@@ -16,7 +18,11 @@ const Layout: React.FC<{
     <Fragment>
       <GlobalStyle />
       <SEO title={title} description={description} socialImage={socialImage} />
-      <LayoutWrapper>
+      <LayoutWrapper
+        sx={(theme) => ({
+          ...theme.rawColors,
+        })}
+      >
         <Header />
         <main>
           <Container>{children}</Container>

@@ -1,13 +1,14 @@
 const theme = {
   colors: {
-    text: "#000",
-    background: "#fff",
-    primary: "#07c",
+    color: "#000",
+    background: "linear-gradient(315deg,#d9e4f5 0%,#f5e3e6 74%)",
     modes: {
       dark: {
-        text: "#fff",
-        background: "#000",
-        primary: "#0cf",
+        color: "#ffa7c4",
+        background: "#282c35",
+      },
+      tag: {
+        background: "inherit",
       },
     },
   },

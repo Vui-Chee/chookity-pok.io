@@ -1,3 +1,5 @@
+/** @jsxImportSource theme-ui */
+
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
@@ -15,7 +17,12 @@ const Tags: React.FC<{ tags: Array<string> }> = ({ tags }) => {
       {tags &&
         tags.map((tag) => {
           return (
-            <Tag key={tag}>
+            <Tag
+              sx={(theme) => ({
+                backgroundColor: theme.rawColors.modes.tag.background,
+              })}
+              key={tag}
+            >
               <Link to={`/tags/${toKebabCase(tag)}`}>{tag}</Link>
             </Tag>
           )
@@ -35,7 +42,6 @@ const Tag = styled.span`
   & a {
     position: relative;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     color: inherit;
     padding: 0.2rem 0.6rem;
