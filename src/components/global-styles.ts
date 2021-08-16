@@ -77,6 +77,20 @@ html {
   overflow-x:hidden;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  #___gatsby {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+  }
+}
+
 body::-webkit-scrollbar {
     width: 10px;
 }
