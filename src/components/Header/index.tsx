@@ -72,7 +72,9 @@ const Header: React.FC = () => {
                 unchecked: <SwitchIcon imageUrl={sun} />,
               }}
               onChange={() =>
-                setColorMode(colorMode === "dark" ? "light" : "dark")
+                setColorMode((prevMode) =>
+                  prevMode === "dark" ? "light" : "dark"
+                )
               }
             />
           </HeaderNavListItem>
