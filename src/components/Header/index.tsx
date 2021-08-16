@@ -41,6 +41,8 @@ const Header: React.FC = () => {
     `
   )
 
+  console.log(colorMode)
+
   return (
     <StyledHeader>
       <HeaderWrapper>
