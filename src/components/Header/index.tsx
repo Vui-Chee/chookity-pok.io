@@ -41,7 +41,7 @@ const Header: React.FC = () => {
     `
   )
 
-  console.log(colorMode)
+  console.log(colorMode, colorMode === "dark")
 
   return (
     <StyledHeader>
