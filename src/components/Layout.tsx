@@ -6,7 +6,6 @@ import Container from "./Container"
 import Footer from "./Footer"
 import Header from "./Header"
 import SEO from "./Seo"
-// import Theme from "./Theme"
 
 export interface GlobalTheme {
   [key: string]: {}
@@ -50,11 +49,11 @@ const Layout: React.FC<{
   }
 
   return (
-    <ThemeProvider theme={themes[colorMode]}>
+    <ThemeProvider theme={themes[localStorage.theme]}>
       <GlobalStyle />
       <SEO title={title} description={description} socialImage={socialImage} />
       <LayoutWrapper>
-        <Header colorMode={colorMode} toggleTheme={toggleTheme} />
+        <Header toggleTheme={toggleTheme} />
         <main>
           <Container>{children}</Container>
         </main>
@@ -67,11 +66,9 @@ const Layout: React.FC<{
 export default Layout
 
 const LayoutWrapper = styled.div`
-  color: ${(props) => {
-    // console.log(props.theme)
-    return props.theme.color
-  }};
+  color: ${(props) => props.theme.color};
   background-color: ${(props) => props.theme.background};
+  transition: color 0.2s ease-out, background 0.2s ease-out;
 
   min-height: 100vh;
   display: flex;

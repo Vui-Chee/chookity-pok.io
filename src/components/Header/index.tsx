@@ -26,9 +26,8 @@ const SwitchIcon: React.FC<{
 )
 
 const Header: React.FC<{
-  colorMode?: string
   toggleTheme?: () => void
-}> = ({ colorMode, toggleTheme }) => {
+}> = ({ toggleTheme }) => {
   const { site } = useStaticQuery(
     graphql`
       query HeaderQuery {
@@ -63,7 +62,7 @@ const Header: React.FC<{
 
           <HeaderNavListItem>
             <Toggle
-              checked={colorMode === "dark"}
+              checked={localStorage.theme === "dark"}
               className="theme-switcher"
               icons={{
                 checked: <SwitchIcon imageUrl={moon} />,
