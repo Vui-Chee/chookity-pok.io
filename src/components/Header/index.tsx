@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
 import "react-toggle/style.css"
+import "./styles.css"
 
 import React from "react"
 import styled from "styled-components"
@@ -7,9 +8,23 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 import Toggle from "react-toggle"
 
-import moon from "../images/moon.png"
-import sun from "../images/sun.png"
-import Container from "./Container"
+import moon from "../../images/moon.png"
+import sun from "../../images/sun.png"
+import Container from "../Container"
+
+const SwitchIcon: React.FC<{
+  imageUrl: string
+  width?: number
+  height?: number
+}> = ({ imageUrl, width = 16, height = 16 }) => (
+  <img
+    src={imageUrl}
+    width={width}
+    height={height}
+    role="presentation"
+    style={{ pointerEvents: "none" }}
+  />
+)
 
 const Header: React.FC = () => {
   const { site } = useStaticQuery(
@@ -46,25 +61,10 @@ const Header: React.FC = () => {
 
           <HeaderNavListItem>
             <Toggle
+              className="theme-switcher"
               icons={{
-                checked: (
-                  <img
-                    src={moon}
-                    width="20"
-                    height="20"
-                    role="presentation"
-                    style={{ pointerEvents: "none" }}
-                  />
-                ),
-                unchecked: (
-                  <img
-                    src={sun}
-                    width="20"
-                    height="20"
-                    role="presentation"
-                    style={{ pointerEvents: "none" }}
-                  />
-                ),
+                checked: <SwitchIcon imageUrl={moon} />,
+                unchecked: <SwitchIcon imageUrl={sun} />,
               }}
             />
           </HeaderNavListItem>
