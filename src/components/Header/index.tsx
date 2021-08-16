@@ -2,11 +2,12 @@
 import "react-toggle/style.css"
 import "./styles.css"
 
-import React from "react"
-import styled from "styled-components"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+import React from "react"
 import Toggle from "react-toggle"
+import styled from "styled-components"
+import { useColorMode } from "theme-ui"
 
 import moon from "../../images/moon.png"
 import sun from "../../images/sun.png"
@@ -27,6 +28,7 @@ const SwitchIcon: React.FC<{
 )
 
 const Header: React.FC = () => {
+  const [colorMode, setColorMode] = useColorMode()
   const { site } = useStaticQuery(
     graphql`
       query HeaderQuery {
@@ -61,11 +63,15 @@ const Header: React.FC = () => {
 
           <HeaderNavListItem>
             <Toggle
+              defaultChecked={colorMode === "dark"}
               className="theme-switcher"
               icons={{
                 checked: <SwitchIcon imageUrl={moon} />,
                 unchecked: <SwitchIcon imageUrl={sun} />,
               }}
+              onChange={() =>
+                setColorMode(colorMode === "dark" ? "light" : "dark")
+              }
             />
           </HeaderNavListItem>
         </HeaderNavList>
