@@ -1,8 +1,14 @@
+/** @jsxImportSource theme-ui */
+import "react-toggle/style.css"
+
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+import Toggle from "react-toggle"
 
+import moon from "../images/moon.png"
+import sun from "../images/sun.png"
 import Container from "./Container"
 
 const Header: React.FC = () => {
@@ -37,6 +43,31 @@ const Header: React.FC = () => {
           <HeaderNavListItem>
             <Link to="/contact">Contact</Link>
           </HeaderNavListItem>
+
+          <HeaderNavListItem>
+            <Toggle
+              icons={{
+                checked: (
+                  <img
+                    src={moon}
+                    width="20"
+                    height="20"
+                    role="presentation"
+                    style={{ pointerEvents: "none" }}
+                  />
+                ),
+                unchecked: (
+                  <img
+                    src={sun}
+                    width="20"
+                    height="20"
+                    role="presentation"
+                    style={{ pointerEvents: "none" }}
+                  />
+                ),
+              }}
+            />
+          </HeaderNavListItem>
         </HeaderNavList>
       </HeaderWrapper>
     </StyledHeader>
@@ -54,7 +85,16 @@ const HeaderNavList: React.FC = ({ children }) => {
 }
 
 const HeaderNavListItem: React.FC = ({ children }) => {
-  return <StyledNavListItem>{children}</StyledNavListItem>
+  return (
+    <StyledNavListItem
+      // For now, ensure each header item is aligned vertically centered.
+      sx={{
+        lineHeight: 0,
+      }}
+    >
+      {children}
+    </StyledNavListItem>
+  )
 }
 
 const StyledHeader = styled.header`

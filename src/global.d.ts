@@ -6,4 +6,6 @@ declare global {
    * for composite types such as Array<...>.
    */
   type ArrayElement<A> = A extends readonly (infer T)[] ? T : never
+
+  declare module "*.png"
 }
