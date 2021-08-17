@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { ThemeProvider } from "styled-components"
+import styled, { ThemeProvider, DefaultTheme } from "styled-components"
 
 import GlobalStyle from "./global-styles"
 import Container from "./Container"
@@ -7,18 +7,18 @@ import Footer from "./Footer"
 import Header from "./Header"
 import SEO from "./Seo"
 
-export interface GlobalTheme {
+export interface GlobalTheme extends DefaultTheme {
   [key: string]: {}
 }
 
 export const themes: GlobalTheme = {
   light: {
     color: "#000",
-    background: "linear-gradient(315deg,#d9e4f5 0%,#f5e3e6 74%)",
+    background: "linear-gradient(360deg, #be308e, #fa6732)",
   },
   dark: {
-    color: "#ffa7c4",
-    background: "#282c35",
+    color: "#fd9c7f",
+    background: "linear-gradient(#281036, #622b6a, #c86b99)",
   },
 }
 
@@ -66,8 +66,6 @@ const Layout: React.FC<{
 export default Layout
 
 const LayoutWrapper = styled.div`
-  color: ${(props) => props.theme.color};
-  background-color: ${(props) => props.theme.background};
   transition: color 0.2s ease-out, background 0.2s ease-out;
 
   min-height: 100vh;
