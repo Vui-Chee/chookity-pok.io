@@ -28,7 +28,7 @@ export const themes: GlobalTheme = {
     },
   },
   dark: {
-    color: "#fb855a",
+    color: "#ffc09f",
     background: "linear-gradient(#240940, #281036, #622b6a)",
     postItem: {
       background: "rgba(42,11,61,0.2)",
