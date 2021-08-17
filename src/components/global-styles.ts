@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components"
 
-const GlobalStyle = createGlobalStyle`
+import { GlobalTheme } from "./Layout"
+
+const GlobalStyle = createGlobalStyle<{ theme: GlobalTheme }>`
 *,
 *::before,
 *::after {
@@ -117,11 +119,9 @@ body::-webkit-scrollbar-track {
 body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
     helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  color: #37292C;
   background-attachment: fixed;
-  background-color: #d9e4f5;
-  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
-
+  color: ${(props) => props.theme.color};
+  background: ${(props) => props.theme.background};
 }
 
 h1,

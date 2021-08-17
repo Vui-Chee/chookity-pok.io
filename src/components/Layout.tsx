@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { ThemeProvider } from "styled-components"
+import styled, { ThemeProvider, DefaultTheme } from "styled-components"
 
 import GlobalStyle from "./global-styles"
 import Container from "./Container"
@@ -7,18 +7,40 @@ import Footer from "./Footer"
 import Header from "./Header"
 import SEO from "./Seo"
 
-export interface GlobalTheme {
+export interface GlobalTheme extends DefaultTheme {
   [key: string]: {}
 }
 
 export const themes: GlobalTheme = {
   light: {
     color: "#000",
-    background: "linear-gradient(315deg,#d9e4f5 0%,#f5e3e6 74%)",
+    background: "linear-gradient(360deg, #c44499, #fa6732)",
+    postItem: {
+      background: "rgba(255, 255, 255, 0.3)",
+      hover: {
+        background: "rgba(255, 255, 255, 0.5)",
+      },
+      a: {
+        hover: {
+          background: "rgba(255,255,255,0.9)",
+        },
+      },
+    },
   },
   dark: {
-    color: "#ffa7c4",
-    background: "#282c35",
+    color: "#ffc09f",
+    background: "linear-gradient(#240940, #281036, #622b6a)",
+    postItem: {
+      background: "rgba(42,11,61,0.2)",
+      hover: {
+        background: "rgba(42,11,61,0.5)",
+      },
+      a: {
+        hover: {
+          background: "rgba(42,11,61,1)",
+        },
+      },
+    },
   },
 }
 
@@ -66,8 +88,6 @@ const Layout: React.FC<{
 export default Layout
 
 const LayoutWrapper = styled.div`
-  color: ${(props) => props.theme.color};
-  background-color: ${(props) => props.theme.background};
   transition: color 0.2s ease-out, background 0.2s ease-out;
 
   min-height: 100vh;

@@ -43,6 +43,6 @@ const Tag = styled.span`
   }
 
   & a:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: ${(props) => props.theme.postItem.a.hover.background};
   }
 `
