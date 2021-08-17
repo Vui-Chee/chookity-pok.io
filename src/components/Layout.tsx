@@ -14,7 +14,7 @@ export interface GlobalTheme extends DefaultTheme {
 export const themes: GlobalTheme = {
   light: {
     color: "#000",
-    background: "linear-gradient(360deg, #be308e, #fa6732)",
+    background: "linear-gradient(360deg, #c44499, #fa6732)",
     postItem: {
       background: "rgba(255, 255, 255, 0.3)",
       hover: {
@@ -28,7 +28,7 @@ export const themes: GlobalTheme = {
     },
   },
   dark: {
-    color: "#fd9c7f",
+    color: "#fb855a",
     background: "linear-gradient(#240940, #281036, #622b6a)",
     postItem: {
       background: "rgba(42,11,61,0.2)",
@@ -37,7 +37,7 @@ export const themes: GlobalTheme = {
       },
       a: {
         hover: {
-          background: "rgba(42,11,61,0.9)",
+          background: "rgba(42,11,61,1)",
         },
       },
     },
