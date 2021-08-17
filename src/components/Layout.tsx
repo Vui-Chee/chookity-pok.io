@@ -15,10 +15,32 @@ export const themes: GlobalTheme = {
   light: {
     color: "#000",
     background: "linear-gradient(360deg, #be308e, #fa6732)",
+    postItem: {
+      background: "rgba(255, 255, 255, 0.3)",
+      hover: {
+        background: "rgba(255, 255, 255, 0.5)",
+      },
+      a: {
+        hover: {
+          background: "rgba(255,255,255,0.9)",
+        },
+      },
+    },
   },
   dark: {
     color: "#fd9c7f",
-    background: "linear-gradient(#281036, #622b6a, #c86b99)",
+    background: "linear-gradient(#240940, #281036, #622b6a)",
+    postItem: {
+      background: "rgba(42,11,61,0.2)",
+      hover: {
+        background: "rgba(42,11,61,0.5)",
+      },
+      a: {
+        hover: {
+          background: "rgba(42,11,61,0.9)",
+        },
+      },
+    },
   },
 }
 

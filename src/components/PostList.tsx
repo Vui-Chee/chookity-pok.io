@@ -89,12 +89,12 @@ const StyledPostListItem = styled.li`
   flex-direction: column;
   padding: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: ${(props) => props.theme.postItem.background};
   backdrop-filter: blur(10px);
   border-radius: 8px;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: ${(props) => props.theme.postItem.hover.background};
   }
 
   @media screen and (max-width: 500px) {
