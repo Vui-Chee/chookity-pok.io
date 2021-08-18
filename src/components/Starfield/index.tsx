@@ -92,7 +92,7 @@ function renderStars(stars: Star[]) {
 }
 
 interface StarfieldProps {
-  zIndex: number
+  zIndex?: number
 }
 
 const StarfieldWrapper = styled.div<StarfieldProps>`
