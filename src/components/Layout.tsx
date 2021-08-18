@@ -34,11 +34,11 @@ export const themes: GlobalTheme = {
     postItem: {
       background: "rgba(42,11,61,0.2)",
       hover: {
-        background: "rgba(42,11,61,0.5)",
+        background: "rgba(42,11,61,0.7)",
       },
       a: {
         hover: {
-          background: "rgba(42,11,61,1)",
+          background: "black",
         },
       },
     },
