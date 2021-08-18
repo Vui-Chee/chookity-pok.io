@@ -91,11 +91,15 @@ function renderStars(stars: Star[]) {
   }
 }
 
-const StarfieldWrapper = styled.div`
+interface StarfieldProps {
+  zIndex: number
+}
+
+const StarfieldWrapper = styled.div<StarfieldProps>`
   position: relative;
   width: 100%;
   height: 100%;
-  z-index: -1000;
+  z-index: ${(props) => props.zIndex};
 `
 
 const StyledCanvas = styled.canvas`
@@ -105,7 +109,7 @@ const StyledCanvas = styled.canvas`
   width: 100%;
 `
 
-const Starfield: React.FC = () => {
+const Starfield: React.FC<StarfieldProps> = ({ zIndex = -1000 }) => {
   let stars: Star[] = []
   let canvasRef = React.useRef<HTMLCanvasElement>()
   let ctx: CanvasRenderingContext2D
@@ -152,7 +156,7 @@ const Starfield: React.FC = () => {
   }, [])
 
   return (
-    <StarfieldWrapper>
+    <StarfieldWrapper zIndex={zIndex}>
       <StyledCanvas ref={canvasRef}></StyledCanvas>
     </StarfieldWrapper>
   )
