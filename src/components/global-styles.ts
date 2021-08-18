@@ -154,7 +154,7 @@ p {
 }
 
 ::selection {
-  background: rgba(255, 255, 255, 0.9);
+  background: ${(props) => props.theme.selection};
 }
 
 p, li {

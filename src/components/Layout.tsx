@@ -27,6 +27,7 @@ export const themes: GlobalTheme = {
         },
       },
     },
+    selection: "rgba(255, 255, 255, 0.9)",
   },
   dark: {
     color: "#ffc09f",
@@ -42,6 +43,7 @@ export const themes: GlobalTheme = {
         },
       },
     },
+    selection: "#cc517a",
   },
 }
 
