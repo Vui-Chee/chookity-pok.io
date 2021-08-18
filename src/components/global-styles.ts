@@ -154,7 +154,7 @@ p {
 }
 
 ::selection {
-  background: rgba(255, 255, 255, 0.9);
+  background: ${(props) => props.theme.selection};
 }
 
 p, li {
@@ -165,7 +165,9 @@ p, li {
     margin-left: 0 !important;
 }
 
-
+a {
+  color: ${(props) => props.theme.color}
+}
 `
 
 export default GlobalStyle

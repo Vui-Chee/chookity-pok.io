@@ -6,6 +6,7 @@ import Container from "./Container"
 import Footer from "./Footer"
 import Header from "./Header"
 import SEO from "./Seo"
+import Starfield from "./Starfield"
 
 export interface GlobalTheme extends DefaultTheme {
   [key: string]: {}
@@ -26,6 +27,7 @@ export const themes: GlobalTheme = {
         },
       },
     },
+    selection: "rgba(255, 255, 255, 0.9)",
   },
   dark: {
     color: "#ffc09f",
@@ -33,14 +35,15 @@ export const themes: GlobalTheme = {
     postItem: {
       background: "rgba(42,11,61,0.2)",
       hover: {
-        background: "rgba(42,11,61,0.5)",
+        background: "rgba(42,11,61,0.7)",
       },
       a: {
         hover: {
-          background: "rgba(42,11,61,1)",
+          background: "black",
         },
       },
     },
+    selection: "#cc517a",
   },
 }
 
@@ -75,6 +78,7 @@ const Layout: React.FC<{
       <GlobalStyle />
       <SEO title={title} description={description} socialImage={socialImage} />
       <LayoutWrapper>
+        {localStorage.theme === "dark" ? <Starfield /> : null}
         <Header toggleTheme={toggleTheme} />
         <main>
           <Container>{children}</Container>
