@@ -165,7 +165,9 @@ p, li {
     margin-left: 0 !important;
 }
 
-
+a {
+  color: ${(props) => props.theme.color}
+}
 `
 
 export default GlobalStyle
