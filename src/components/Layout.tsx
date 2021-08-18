@@ -6,6 +6,7 @@ import Container from "./Container"
 import Footer from "./Footer"
 import Header from "./Header"
 import SEO from "./Seo"
+import Starfield from "./Starfield"
 
 export interface GlobalTheme extends DefaultTheme {
   [key: string]: {}
@@ -75,6 +76,7 @@ const Layout: React.FC<{
       <GlobalStyle />
       <SEO title={title} description={description} socialImage={socialImage} />
       <LayoutWrapper>
+        {localStorage.theme === "dark" ? <Starfield /> : null}
         <Header toggleTheme={toggleTheme} />
         <main>
           <Container>{children}</Container>
