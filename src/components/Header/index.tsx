@@ -57,10 +57,6 @@ const Header: React.FC<{
           </HeaderNavListItem>
 
           <HeaderNavListItem>
-            <Link to="/contact">Contact</Link>
-          </HeaderNavListItem>
-
-          <HeaderNavListItem>
             <Toggle
               checked={localStorage.theme === "dark"}
               className="theme-switcher"
