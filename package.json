@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-glass",
+  "name": "chookity-pok-io",
   "private": true,
-  "description": "A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.",
+  "description": "My personal blog",
   "version": "1.0.0",
   "author": "Vui Chee",
   "dependencies": {

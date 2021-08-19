@@ -757,44 +757,6 @@ export enum FileFieldsEnum {
   childrenMarkdownRemark___frontmatter___profile_image___childrenMarkdownRemark = "childrenMarkdownRemark___frontmatter___profile_image___childrenMarkdownRemark",
   childrenMarkdownRemark___frontmatter___profile_image___id = "childrenMarkdownRemark___frontmatter___profile_image___id",
   childrenMarkdownRemark___frontmatter___profile_image___children = "childrenMarkdownRemark___frontmatter___profile_image___children",
-  childrenMarkdownRemark___frontmatter___social_image___sourceInstanceName = "childrenMarkdownRemark___frontmatter___social_image___sourceInstanceName",
-  childrenMarkdownRemark___frontmatter___social_image___absolutePath = "childrenMarkdownRemark___frontmatter___social_image___absolutePath",
-  childrenMarkdownRemark___frontmatter___social_image___relativePath = "childrenMarkdownRemark___frontmatter___social_image___relativePath",
-  childrenMarkdownRemark___frontmatter___social_image___extension = "childrenMarkdownRemark___frontmatter___social_image___extension",
-  childrenMarkdownRemark___frontmatter___social_image___size = "childrenMarkdownRemark___frontmatter___social_image___size",
-  childrenMarkdownRemark___frontmatter___social_image___prettySize = "childrenMarkdownRemark___frontmatter___social_image___prettySize",
-  childrenMarkdownRemark___frontmatter___social_image___modifiedTime = "childrenMarkdownRemark___frontmatter___social_image___modifiedTime",
-  childrenMarkdownRemark___frontmatter___social_image___accessTime = "childrenMarkdownRemark___frontmatter___social_image___accessTime",
-  childrenMarkdownRemark___frontmatter___social_image___changeTime = "childrenMarkdownRemark___frontmatter___social_image___changeTime",
-  childrenMarkdownRemark___frontmatter___social_image___birthTime = "childrenMarkdownRemark___frontmatter___social_image___birthTime",
-  childrenMarkdownRemark___frontmatter___social_image___root = "childrenMarkdownRemark___frontmatter___social_image___root",
-  childrenMarkdownRemark___frontmatter___social_image___dir = "childrenMarkdownRemark___frontmatter___social_image___dir",
-  childrenMarkdownRemark___frontmatter___social_image___base = "childrenMarkdownRemark___frontmatter___social_image___base",
-  childrenMarkdownRemark___frontmatter___social_image___ext = "childrenMarkdownRemark___frontmatter___social_image___ext",
-  childrenMarkdownRemark___frontmatter___social_image___name = "childrenMarkdownRemark___frontmatter___social_image___name",
-  childrenMarkdownRemark___frontmatter___social_image___relativeDirectory = "childrenMarkdownRemark___frontmatter___social_image___relativeDirectory",
-  childrenMarkdownRemark___frontmatter___social_image___dev = "childrenMarkdownRemark___frontmatter___social_image___dev",
-  childrenMarkdownRemark___frontmatter___social_image___mode = "childrenMarkdownRemark___frontmatter___social_image___mode",
-  childrenMarkdownRemark___frontmatter___social_image___nlink = "childrenMarkdownRemark___frontmatter___social_image___nlink",
-  childrenMarkdownRemark___frontmatter___social_image___uid = "childrenMarkdownRemark___frontmatter___social_image___uid",
-  childrenMarkdownRemark___frontmatter___social_image___gid = "childrenMarkdownRemark___frontmatter___social_image___gid",
-  childrenMarkdownRemark___frontmatter___social_image___rdev = "childrenMarkdownRemark___frontmatter___social_image___rdev",
-  childrenMarkdownRemark___frontmatter___social_image___ino = "childrenMarkdownRemark___frontmatter___social_image___ino",
-  childrenMarkdownRemark___frontmatter___social_image___atimeMs = "childrenMarkdownRemark___frontmatter___social_image___atimeMs",
-  childrenMarkdownRemark___frontmatter___social_image___mtimeMs = "childrenMarkdownRemark___frontmatter___social_image___mtimeMs",
-  childrenMarkdownRemark___frontmatter___social_image___ctimeMs = "childrenMarkdownRemark___frontmatter___social_image___ctimeMs",
-  childrenMarkdownRemark___frontmatter___social_image___atime = "childrenMarkdownRemark___frontmatter___social_image___atime",
-  childrenMarkdownRemark___frontmatter___social_image___mtime = "childrenMarkdownRemark___frontmatter___social_image___mtime",
-  childrenMarkdownRemark___frontmatter___social_image___ctime = "childrenMarkdownRemark___frontmatter___social_image___ctime",
-  childrenMarkdownRemark___frontmatter___social_image___birthtime = "childrenMarkdownRemark___frontmatter___social_image___birthtime",
-  childrenMarkdownRemark___frontmatter___social_image___birthtimeMs = "childrenMarkdownRemark___frontmatter___social_image___birthtimeMs",
-  childrenMarkdownRemark___frontmatter___social_image___blksize = "childrenMarkdownRemark___frontmatter___social_image___blksize",
-  childrenMarkdownRemark___frontmatter___social_image___blocks = "childrenMarkdownRemark___frontmatter___social_image___blocks",
-  childrenMarkdownRemark___frontmatter___social_image___publicURL = "childrenMarkdownRemark___frontmatter___social_image___publicURL",
-  childrenMarkdownRemark___frontmatter___social_image___childrenImageSharp = "childrenMarkdownRemark___frontmatter___social_image___childrenImageSharp",
-  childrenMarkdownRemark___frontmatter___social_image___childrenMarkdownRemark = "childrenMarkdownRemark___frontmatter___social_image___childrenMarkdownRemark",
-  childrenMarkdownRemark___frontmatter___social_image___id = "childrenMarkdownRemark___frontmatter___social_image___id",
-  childrenMarkdownRemark___frontmatter___social_image___children = "childrenMarkdownRemark___frontmatter___social_image___children",
   childrenMarkdownRemark___fields___slug = "childrenMarkdownRemark___fields___slug",
   childrenMarkdownRemark___fields___contentType = "childrenMarkdownRemark___fields___contentType",
   childrenMarkdownRemark___excerpt = "childrenMarkdownRemark___excerpt",
@@ -893,44 +855,6 @@ export enum FileFieldsEnum {
   childMarkdownRemark___frontmatter___profile_image___childrenMarkdownRemark = "childMarkdownRemark___frontmatter___profile_image___childrenMarkdownRemark",
   childMarkdownRemark___frontmatter___profile_image___id = "childMarkdownRemark___frontmatter___profile_image___id",
   childMarkdownRemark___frontmatter___profile_image___children = "childMarkdownRemark___frontmatter___profile_image___children",
-  childMarkdownRemark___frontmatter___social_image___sourceInstanceName = "childMarkdownRemark___frontmatter___social_image___sourceInstanceName",
-  childMarkdownRemark___frontmatter___social_image___absolutePath = "childMarkdownRemark___frontmatter___social_image___absolutePath",
-  childMarkdownRemark___frontmatter___social_image___relativePath = "childMarkdownRemark___frontmatter___social_image___relativePath",
-  childMarkdownRemark___frontmatter___social_image___extension = "childMarkdownRemark___frontmatter___social_image___extension",
-  childMarkdownRemark___frontmatter___social_image___size = "childMarkdownRemark___frontmatter___social_image___size",
-  childMarkdownRemark___frontmatter___social_image___prettySize = "childMarkdownRemark___frontmatter___social_image___prettySize",
-  childMarkdownRemark___frontmatter___social_image___modifiedTime = "childMarkdownRemark___frontmatter___social_image___modifiedTime",
-  childMarkdownRemark___frontmatter___social_image___accessTime = "childMarkdownRemark___frontmatter___social_image___accessTime",
-  childMarkdownRemark___frontmatter___social_image___changeTime = "childMarkdownRemark___frontmatter___social_image___changeTime",
-  childMarkdownRemark___frontmatter___social_image___birthTime = "childMarkdownRemark___frontmatter___social_image___birthTime",
-  childMarkdownRemark___frontmatter___social_image___root = "childMarkdownRemark___frontmatter___social_image___root",
-  childMarkdownRemark___frontmatter___social_image___dir = "childMarkdownRemark___frontmatter___social_image___dir",
-  childMarkdownRemark___frontmatter___social_image___base = "childMarkdownRemark___frontmatter___social_image___base",
-  childMarkdownRemark___frontmatter___social_image___ext = "childMarkdownRemark___frontmatter___social_image___ext",
-  childMarkdownRemark___frontmatter___social_image___name = "childMarkdownRemark___frontmatter___social_image___name",
-  childMarkdownRemark___frontmatter___social_image___relativeDirectory = "childMarkdownRemark___frontmatter___social_image___relativeDirectory",
-  childMarkdownRemark___frontmatter___social_image___dev = "childMarkdownRemark___frontmatter___social_image___dev",
-  childMarkdownRemark___frontmatter___social_image___mode = "childMarkdownRemark___frontmatter___social_image___mode",
-  childMarkdownRemark___frontmatter___social_image___nlink = "childMarkdownRemark___frontmatter___social_image___nlink",
-  childMarkdownRemark___frontmatter___social_image___uid = "childMarkdownRemark___frontmatter___social_image___uid",
-  childMarkdownRemark___frontmatter___social_image___gid = "childMarkdownRemark___frontmatter___social_image___gid",
-  childMarkdownRemark___frontmatter___social_image___rdev = "childMarkdownRemark___frontmatter___social_image___rdev",
-  childMarkdownRemark___frontmatter___social_image___ino = "childMarkdownRemark___frontmatter___social_image___ino",
-  childMarkdownRemark___frontmatter___social_image___atimeMs = "childMarkdownRemark___frontmatter___social_image___atimeMs",
-  childMarkdownRemark___frontmatter___social_image___mtimeMs = "childMarkdownRemark___frontmatter___social_image___mtimeMs",
-  childMarkdownRemark___frontmatter___social_image___ctimeMs = "childMarkdownRemark___frontmatter___social_image___ctimeMs",
-  childMarkdownRemark___frontmatter___social_image___atime = "childMarkdownRemark___frontmatter___social_image___atime",
-  childMarkdownRemark___frontmatter___social_image___mtime = "childMarkdownRemark___frontmatter___social_image___mtime",
-  childMarkdownRemark___frontmatter___social_image___ctime = "childMarkdownRemark___frontmatter___social_image___ctime",
-  childMarkdownRemark___frontmatter___social_image___birthtime = "childMarkdownRemark___frontmatter___social_image___birthtime",
-  childMarkdownRemark___frontmatter___social_image___birthtimeMs = "childMarkdownRemark___frontmatter___social_image___birthtimeMs",
-  childMarkdownRemark___frontmatter___social_image___blksize = "childMarkdownRemark___frontmatter___social_image___blksize",
-  childMarkdownRemark___frontmatter___social_image___blocks = "childMarkdownRemark___frontmatter___social_image___blocks",
-  childMarkdownRemark___frontmatter___social_image___publicURL = "childMarkdownRemark___frontmatter___social_image___publicURL",
-  childMarkdownRemark___frontmatter___social_image___childrenImageSharp = "childMarkdownRemark___frontmatter___social_image___childrenImageSharp",
-  childMarkdownRemark___frontmatter___social_image___childrenMarkdownRemark = "childMarkdownRemark___frontmatter___social_image___childrenMarkdownRemark",
-  childMarkdownRemark___frontmatter___social_image___id = "childMarkdownRemark___frontmatter___social_image___id",
-  childMarkdownRemark___frontmatter___social_image___children = "childMarkdownRemark___frontmatter___social_image___children",
   childMarkdownRemark___fields___slug = "childMarkdownRemark___fields___slug",
   childMarkdownRemark___fields___contentType = "childMarkdownRemark___fields___contentType",
   childMarkdownRemark___excerpt = "childMarkdownRemark___excerpt",
@@ -1152,7 +1076,6 @@ export type Frontmatter = {
   template?: Maybe<Scalars["String"]>
   tags?: Maybe<Array<Scalars["String"]>>
   profile_image?: Maybe<File>
-  social_image?: Maybe<File>
 }
 
 export type FrontmatterDateArgs = {
@@ -1169,7 +1092,6 @@ export type FrontmatterFilterInput = {
   template?: Maybe<StringQueryOperatorInput>
   tags?: Maybe<StringQueryOperatorInput>
   profile_image?: Maybe<FileFilterInput>
-  social_image?: Maybe<FileFilterInput>
 }
 
 export enum ImageCropFocus {
@@ -1851,84 +1773,6 @@ export enum MarkdownRemarkFieldsEnum {
   frontmatter___profile_image___internal___mediaType = "frontmatter___profile_image___internal___mediaType",
   frontmatter___profile_image___internal___owner = "frontmatter___profile_image___internal___owner",
   frontmatter___profile_image___internal___type = "frontmatter___profile_image___internal___type",
-  frontmatter___social_image___sourceInstanceName = "frontmatter___social_image___sourceInstanceName",
-  frontmatter___social_image___absolutePath = "frontmatter___social_image___absolutePath",
-  frontmatter___social_image___relativePath = "frontmatter___social_image___relativePath",
-  frontmatter___social_image___extension = "frontmatter___social_image___extension",
-  frontmatter___social_image___size = "frontmatter___social_image___size",
-  frontmatter___social_image___prettySize = "frontmatter___social_image___prettySize",
-  frontmatter___social_image___modifiedTime = "frontmatter___social_image___modifiedTime",
-  frontmatter___social_image___accessTime = "frontmatter___social_image___accessTime",
-  frontmatter___social_image___changeTime = "frontmatter___social_image___changeTime",
-  frontmatter___social_image___birthTime = "frontmatter___social_image___birthTime",
-  frontmatter___social_image___root = "frontmatter___social_image___root",
-  frontmatter___social_image___dir = "frontmatter___social_image___dir",
-  frontmatter___social_image___base = "frontmatter___social_image___base",
-  frontmatter___social_image___ext = "frontmatter___social_image___ext",
-  frontmatter___social_image___name = "frontmatter___social_image___name",
-  frontmatter___social_image___relativeDirectory = "frontmatter___social_image___relativeDirectory",
-  frontmatter___social_image___dev = "frontmatter___social_image___dev",
-  frontmatter___social_image___mode = "frontmatter___social_image___mode",
-  frontmatter___social_image___nlink = "frontmatter___social_image___nlink",
-  frontmatter___social_image___uid = "frontmatter___social_image___uid",
-  frontmatter___social_image___gid = "frontmatter___social_image___gid",
-  frontmatter___social_image___rdev = "frontmatter___social_image___rdev",
-  frontmatter___social_image___ino = "frontmatter___social_image___ino",
-  frontmatter___social_image___atimeMs = "frontmatter___social_image___atimeMs",
-  frontmatter___social_image___mtimeMs = "frontmatter___social_image___mtimeMs",
-  frontmatter___social_image___ctimeMs = "frontmatter___social_image___ctimeMs",
-  frontmatter___social_image___atime = "frontmatter___social_image___atime",
-  frontmatter___social_image___mtime = "frontmatter___social_image___mtime",
-  frontmatter___social_image___ctime = "frontmatter___social_image___ctime",
-  frontmatter___social_image___birthtime = "frontmatter___social_image___birthtime",
-  frontmatter___social_image___birthtimeMs = "frontmatter___social_image___birthtimeMs",
-  frontmatter___social_image___blksize = "frontmatter___social_image___blksize",
-  frontmatter___social_image___blocks = "frontmatter___social_image___blocks",
-  frontmatter___social_image___publicURL = "frontmatter___social_image___publicURL",
-  frontmatter___social_image___childrenImageSharp = "frontmatter___social_image___childrenImageSharp",
-  frontmatter___social_image___childrenImageSharp___gatsbyImageData = "frontmatter___social_image___childrenImageSharp___gatsbyImageData",
-  frontmatter___social_image___childrenImageSharp___id = "frontmatter___social_image___childrenImageSharp___id",
-  frontmatter___social_image___childrenImageSharp___children = "frontmatter___social_image___childrenImageSharp___children",
-  frontmatter___social_image___childImageSharp___gatsbyImageData = "frontmatter___social_image___childImageSharp___gatsbyImageData",
-  frontmatter___social_image___childImageSharp___id = "frontmatter___social_image___childImageSharp___id",
-  frontmatter___social_image___childImageSharp___children = "frontmatter___social_image___childImageSharp___children",
-  frontmatter___social_image___childrenMarkdownRemark = "frontmatter___social_image___childrenMarkdownRemark",
-  frontmatter___social_image___childrenMarkdownRemark___id = "frontmatter___social_image___childrenMarkdownRemark___id",
-  frontmatter___social_image___childrenMarkdownRemark___excerpt = "frontmatter___social_image___childrenMarkdownRemark___excerpt",
-  frontmatter___social_image___childrenMarkdownRemark___rawMarkdownBody = "frontmatter___social_image___childrenMarkdownRemark___rawMarkdownBody",
-  frontmatter___social_image___childrenMarkdownRemark___fileAbsolutePath = "frontmatter___social_image___childrenMarkdownRemark___fileAbsolutePath",
-  frontmatter___social_image___childrenMarkdownRemark___html = "frontmatter___social_image___childrenMarkdownRemark___html",
-  frontmatter___social_image___childrenMarkdownRemark___htmlAst = "frontmatter___social_image___childrenMarkdownRemark___htmlAst",
-  frontmatter___social_image___childrenMarkdownRemark___excerptAst = "frontmatter___social_image___childrenMarkdownRemark___excerptAst",
-  frontmatter___social_image___childrenMarkdownRemark___headings = "frontmatter___social_image___childrenMarkdownRemark___headings",
-  frontmatter___social_image___childrenMarkdownRemark___timeToRead = "frontmatter___social_image___childrenMarkdownRemark___timeToRead",
-  frontmatter___social_image___childrenMarkdownRemark___tableOfContents = "frontmatter___social_image___childrenMarkdownRemark___tableOfContents",
-  frontmatter___social_image___childrenMarkdownRemark___children = "frontmatter___social_image___childrenMarkdownRemark___children",
-  frontmatter___social_image___childMarkdownRemark___id = "frontmatter___social_image___childMarkdownRemark___id",
-  frontmatter___social_image___childMarkdownRemark___excerpt = "frontmatter___social_image___childMarkdownRemark___excerpt",
-  frontmatter___social_image___childMarkdownRemark___rawMarkdownBody = "frontmatter___social_image___childMarkdownRemark___rawMarkdownBody",
-  frontmatter___social_image___childMarkdownRemark___fileAbsolutePath = "frontmatter___social_image___childMarkdownRemark___fileAbsolutePath",
-  frontmatter___social_image___childMarkdownRemark___html = "frontmatter___social_image___childMarkdownRemark___html",
-  frontmatter___social_image___childMarkdownRemark___htmlAst = "frontmatter___social_image___childMarkdownRemark___htmlAst",
-  frontmatter___social_image___childMarkdownRemark___excerptAst = "frontmatter___social_image___childMarkdownRemark___excerptAst",
-  frontmatter___social_image___childMarkdownRemark___headings = "frontmatter___social_image___childMarkdownRemark___headings",
-  frontmatter___social_image___childMarkdownRemark___timeToRead = "frontmatter___social_image___childMarkdownRemark___timeToRead",
-  frontmatter___social_image___childMarkdownRemark___tableOfContents = "frontmatter___social_image___childMarkdownRemark___tableOfContents",
-  frontmatter___social_image___childMarkdownRemark___children = "frontmatter___social_image___childMarkdownRemark___children",
-  frontmatter___social_image___id = "frontmatter___social_image___id",
-  frontmatter___social_image___parent___id = "frontmatter___social_image___parent___id",
-  frontmatter___social_image___parent___children = "frontmatter___social_image___parent___children",
-  frontmatter___social_image___children = "frontmatter___social_image___children",
-  frontmatter___social_image___children___id = "frontmatter___social_image___children___id",
-  frontmatter___social_image___children___children = "frontmatter___social_image___children___children",
-  frontmatter___social_image___internal___content = "frontmatter___social_image___internal___content",
-  frontmatter___social_image___internal___contentDigest = "frontmatter___social_image___internal___contentDigest",
-  frontmatter___social_image___internal___description = "frontmatter___social_image___internal___description",
-  frontmatter___social_image___internal___fieldOwners = "frontmatter___social_image___internal___fieldOwners",
-  frontmatter___social_image___internal___ignoreType = "frontmatter___social_image___internal___ignoreType",
-  frontmatter___social_image___internal___mediaType = "frontmatter___social_image___internal___mediaType",
-  frontmatter___social_image___internal___owner = "frontmatter___social_image___internal___owner",
-  frontmatter___social_image___internal___type = "frontmatter___social_image___internal___type",
   fields___slug = "fields___slug",
   fields___contentType = "fields___contentType",
   excerpt = "excerpt",
@@ -2308,14 +2152,14 @@ export type QuerySitePageArgs = {
   internalComponentName?: Maybe<StringQueryOperatorInput>
   componentChunkName?: Maybe<StringQueryOperatorInput>
   matchPath?: Maybe<StringQueryOperatorInput>
+  isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>
+  pluginCreator?: Maybe<SitePluginFilterInput>
+  pluginCreatorId?: Maybe<StringQueryOperatorInput>
   id?: Maybe<StringQueryOperatorInput>
   parent?: Maybe<NodeFilterInput>
   children?: Maybe<NodeFilterListInput>
   internal?: Maybe<InternalFilterInput>
-  isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>
   context?: Maybe<SitePageContextFilterInput>
-  pluginCreator?: Maybe<SitePluginFilterInput>
-  pluginCreatorId?: Maybe<StringQueryOperatorInput>
 }
 
 export type QueryAllSitePageArgs = {
@@ -2957,14 +2801,14 @@ export type SitePage = Node & {
   internalComponentName: Scalars["String"]
   componentChunkName: Scalars["String"]
   matchPath?: Maybe<Scalars["String"]>
+  isCreatedByStatefulCreatePages?: Maybe<Scalars["Boolean"]>
+  pluginCreator?: Maybe<SitePlugin>
+  pluginCreatorId?: Maybe<Scalars["String"]>
   id: Scalars["ID"]
   parent?: Maybe<Node>
   children: Array<Node>
   internal: Internal
-  isCreatedByStatefulCreatePages?: Maybe<Scalars["Boolean"]>
   context?: Maybe<SitePageContext>
-  pluginCreator?: Maybe<SitePlugin>
-  pluginCreatorId?: Maybe<Scalars["String"]>
 }
 
 export type SitePageConnection = {
@@ -3005,15 +2849,11 @@ export type SitePageConnectionGroupArgs = {
 export type SitePageContext = {
   __typename?: "SitePageContext"
   slug?: Maybe<Scalars["String"]>
-  prevSlug?: Maybe<Scalars["String"]>
-  nextSlug?: Maybe<Scalars["String"]>
   tag?: Maybe<Scalars["String"]>
 }
 
 export type SitePageContextFilterInput = {
   slug?: Maybe<StringQueryOperatorInput>
-  prevSlug?: Maybe<StringQueryOperatorInput>
-  nextSlug?: Maybe<StringQueryOperatorInput>
   tag?: Maybe<StringQueryOperatorInput>
 }
 
@@ -3030,6 +2870,125 @@ export enum SitePageFieldsEnum {
   internalComponentName = "internalComponentName",
   componentChunkName = "componentChunkName",
   matchPath = "matchPath",
+  isCreatedByStatefulCreatePages = "isCreatedByStatefulCreatePages",
+  pluginCreator___id = "pluginCreator___id",
+  pluginCreator___parent___id = "pluginCreator___parent___id",
+  pluginCreator___parent___parent___id = "pluginCreator___parent___parent___id",
+  pluginCreator___parent___parent___children = "pluginCreator___parent___parent___children",
+  pluginCreator___parent___children = "pluginCreator___parent___children",
+  pluginCreator___parent___children___id = "pluginCreator___parent___children___id",
+  pluginCreator___parent___children___children = "pluginCreator___parent___children___children",
+  pluginCreator___parent___internal___content = "pluginCreator___parent___internal___content",
+  pluginCreator___parent___internal___contentDigest = "pluginCreator___parent___internal___contentDigest",
+  pluginCreator___parent___internal___description = "pluginCreator___parent___internal___description",
+  pluginCreator___parent___internal___fieldOwners = "pluginCreator___parent___internal___fieldOwners",
+  pluginCreator___parent___internal___ignoreType = "pluginCreator___parent___internal___ignoreType",
+  pluginCreator___parent___internal___mediaType = "pluginCreator___parent___internal___mediaType",
+  pluginCreator___parent___internal___owner = "pluginCreator___parent___internal___owner",
+  pluginCreator___parent___internal___type = "pluginCreator___parent___internal___type",
+  pluginCreator___children = "pluginCreator___children",
+  pluginCreator___children___id = "pluginCreator___children___id",
+  pluginCreator___children___parent___id = "pluginCreator___children___parent___id",
+  pluginCreator___children___parent___children = "pluginCreator___children___parent___children",
+  pluginCreator___children___children = "pluginCreator___children___children",
+  pluginCreator___children___children___id = "pluginCreator___children___children___id",
+  pluginCreator___children___children___children = "pluginCreator___children___children___children",
+  pluginCreator___children___internal___content = "pluginCreator___children___internal___content",
+  pluginCreator___children___internal___contentDigest = "pluginCreator___children___internal___contentDigest",
+  pluginCreator___children___internal___description = "pluginCreator___children___internal___description",
+  pluginCreator___children___internal___fieldOwners = "pluginCreator___children___internal___fieldOwners",
+  pluginCreator___children___internal___ignoreType = "pluginCreator___children___internal___ignoreType",
+  pluginCreator___children___internal___mediaType = "pluginCreator___children___internal___mediaType",
+  pluginCreator___children___internal___owner = "pluginCreator___children___internal___owner",
+  pluginCreator___children___internal___type = "pluginCreator___children___internal___type",
+  pluginCreator___internal___content = "pluginCreator___internal___content",
+  pluginCreator___internal___contentDigest = "pluginCreator___internal___contentDigest",
+  pluginCreator___internal___description = "pluginCreator___internal___description",
+  pluginCreator___internal___fieldOwners = "pluginCreator___internal___fieldOwners",
+  pluginCreator___internal___ignoreType = "pluginCreator___internal___ignoreType",
+  pluginCreator___internal___mediaType = "pluginCreator___internal___mediaType",
+  pluginCreator___internal___owner = "pluginCreator___internal___owner",
+  pluginCreator___internal___type = "pluginCreator___internal___type",
+  pluginCreator___resolve = "pluginCreator___resolve",
+  pluginCreator___name = "pluginCreator___name",
+  pluginCreator___version = "pluginCreator___version",
+  pluginCreator___pluginOptions___plugins = "pluginCreator___pluginOptions___plugins",
+  pluginCreator___pluginOptions___plugins___resolve = "pluginCreator___pluginOptions___plugins___resolve",
+  pluginCreator___pluginOptions___plugins___id = "pluginCreator___pluginOptions___plugins___id",
+  pluginCreator___pluginOptions___plugins___name = "pluginCreator___pluginOptions___plugins___name",
+  pluginCreator___pluginOptions___plugins___version = "pluginCreator___pluginOptions___plugins___version",
+  pluginCreator___pluginOptions___plugins___nodeAPIs = "pluginCreator___pluginOptions___plugins___nodeAPIs",
+  pluginCreator___pluginOptions___plugins___browserAPIs = "pluginCreator___pluginOptions___plugins___browserAPIs",
+  pluginCreator___pluginOptions___plugins___pluginFilepath = "pluginCreator___pluginOptions___plugins___pluginFilepath",
+  pluginCreator___pluginOptions___displayName = "pluginCreator___pluginOptions___displayName",
+  pluginCreator___pluginOptions___fileName = "pluginCreator___pluginOptions___fileName",
+  pluginCreator___pluginOptions___minify = "pluginCreator___pluginOptions___minify",
+  pluginCreator___pluginOptions___namespace = "pluginCreator___pluginOptions___namespace",
+  pluginCreator___pluginOptions___transpileTemplateLiterals = "pluginCreator___pluginOptions___transpileTemplateLiterals",
+  pluginCreator___pluginOptions___pure = "pluginCreator___pluginOptions___pure",
+  pluginCreator___pluginOptions___base64Width = "pluginCreator___pluginOptions___base64Width",
+  pluginCreator___pluginOptions___stripMetadata = "pluginCreator___pluginOptions___stripMetadata",
+  pluginCreator___pluginOptions___defaultQuality = "pluginCreator___pluginOptions___defaultQuality",
+  pluginCreator___pluginOptions___failOnError = "pluginCreator___pluginOptions___failOnError",
+  pluginCreator___pluginOptions___isTSX = "pluginCreator___pluginOptions___isTSX",
+  pluginCreator___pluginOptions___jsxPragma = "pluginCreator___pluginOptions___jsxPragma",
+  pluginCreator___pluginOptions___allExtensions = "pluginCreator___pluginOptions___allExtensions",
+  pluginCreator___pluginOptions___name = "pluginCreator___pluginOptions___name",
+  pluginCreator___pluginOptions___path = "pluginCreator___pluginOptions___path",
+  pluginCreator___pluginOptions___staticFolderName = "pluginCreator___pluginOptions___staticFolderName",
+  pluginCreator___pluginOptions___maxWidth = "pluginCreator___pluginOptions___maxWidth",
+  pluginCreator___pluginOptions___linkImagesToOriginal = "pluginCreator___pluginOptions___linkImagesToOriginal",
+  pluginCreator___pluginOptions___showCaptions = "pluginCreator___pluginOptions___showCaptions",
+  pluginCreator___pluginOptions___markdownCaptions = "pluginCreator___pluginOptions___markdownCaptions",
+  pluginCreator___pluginOptions___sizeByPixelDensity = "pluginCreator___pluginOptions___sizeByPixelDensity",
+  pluginCreator___pluginOptions___backgroundColor = "pluginCreator___pluginOptions___backgroundColor",
+  pluginCreator___pluginOptions___quality = "pluginCreator___pluginOptions___quality",
+  pluginCreator___pluginOptions___withWebp = "pluginCreator___pluginOptions___withWebp",
+  pluginCreator___pluginOptions___tracedSVG = "pluginCreator___pluginOptions___tracedSVG",
+  pluginCreator___pluginOptions___loading = "pluginCreator___pluginOptions___loading",
+  pluginCreator___pluginOptions___decoding = "pluginCreator___pluginOptions___decoding",
+  pluginCreator___pluginOptions___disableBgImageOnAlpha = "pluginCreator___pluginOptions___disableBgImageOnAlpha",
+  pluginCreator___pluginOptions___disableBgImage = "pluginCreator___pluginOptions___disableBgImage",
+  pluginCreator___pluginOptions___wrapperStyle = "pluginCreator___pluginOptions___wrapperStyle",
+  pluginCreator___pluginOptions___query = "pluginCreator___pluginOptions___query",
+  pluginCreator___pluginOptions___feeds = "pluginCreator___pluginOptions___feeds",
+  pluginCreator___pluginOptions___feeds___query = "pluginCreator___pluginOptions___feeds___query",
+  pluginCreator___pluginOptions___feeds___output = "pluginCreator___pluginOptions___feeds___output",
+  pluginCreator___pluginOptions___fonts = "pluginCreator___pluginOptions___fonts",
+  pluginCreator___pluginOptions___display = "pluginCreator___pluginOptions___display",
+  pluginCreator___pluginOptions___short_name = "pluginCreator___pluginOptions___short_name",
+  pluginCreator___pluginOptions___start_url = "pluginCreator___pluginOptions___start_url",
+  pluginCreator___pluginOptions___background_color = "pluginCreator___pluginOptions___background_color",
+  pluginCreator___pluginOptions___theme_color = "pluginCreator___pluginOptions___theme_color",
+  pluginCreator___pluginOptions___icon = "pluginCreator___pluginOptions___icon",
+  pluginCreator___pluginOptions___legacy = "pluginCreator___pluginOptions___legacy",
+  pluginCreator___pluginOptions___theme_color_in_head = "pluginCreator___pluginOptions___theme_color_in_head",
+  pluginCreator___pluginOptions___cache_busting_mode = "pluginCreator___pluginOptions___cache_busting_mode",
+  pluginCreator___pluginOptions___crossOrigin = "pluginCreator___pluginOptions___crossOrigin",
+  pluginCreator___pluginOptions___include_favicon = "pluginCreator___pluginOptions___include_favicon",
+  pluginCreator___pluginOptions___cacheDigest = "pluginCreator___pluginOptions___cacheDigest",
+  pluginCreator___pluginOptions___pathCheck = "pluginCreator___pluginOptions___pathCheck",
+  pluginCreator___nodeAPIs = "pluginCreator___nodeAPIs",
+  pluginCreator___browserAPIs = "pluginCreator___browserAPIs",
+  pluginCreator___ssrAPIs = "pluginCreator___ssrAPIs",
+  pluginCreator___pluginFilepath = "pluginCreator___pluginFilepath",
+  pluginCreator___packageJson___name = "pluginCreator___packageJson___name",
+  pluginCreator___packageJson___description = "pluginCreator___packageJson___description",
+  pluginCreator___packageJson___version = "pluginCreator___packageJson___version",
+  pluginCreator___packageJson___main = "pluginCreator___packageJson___main",
+  pluginCreator___packageJson___author = "pluginCreator___packageJson___author",
+  pluginCreator___packageJson___license = "pluginCreator___packageJson___license",
+  pluginCreator___packageJson___dependencies = "pluginCreator___packageJson___dependencies",
+  pluginCreator___packageJson___dependencies___name = "pluginCreator___packageJson___dependencies___name",
+  pluginCreator___packageJson___dependencies___version = "pluginCreator___packageJson___dependencies___version",
+  pluginCreator___packageJson___devDependencies = "pluginCreator___packageJson___devDependencies",
+  pluginCreator___packageJson___devDependencies___name = "pluginCreator___packageJson___devDependencies___name",
+  pluginCreator___packageJson___devDependencies___version = "pluginCreator___packageJson___devDependencies___version",
+  pluginCreator___packageJson___peerDependencies = "pluginCreator___packageJson___peerDependencies",
+  pluginCreator___packageJson___peerDependencies___name = "pluginCreator___packageJson___peerDependencies___name",
+  pluginCreator___packageJson___peerDependencies___version = "pluginCreator___packageJson___peerDependencies___version",
+  pluginCreator___packageJson___keywords = "pluginCreator___packageJson___keywords",
+  pluginCreatorId = "pluginCreatorId",
   id = "id",
   parent___id = "parent___id",
   parent___parent___id = "parent___parent___id",
@@ -3116,134 +3075,8 @@ export enum SitePageFieldsEnum {
   internal___mediaType = "internal___mediaType",
   internal___owner = "internal___owner",
   internal___type = "internal___type",
-  isCreatedByStatefulCreatePages = "isCreatedByStatefulCreatePages",
   context___slug = "context___slug",
-  context___prevSlug = "context___prevSlug",
-  context___nextSlug = "context___nextSlug",
   context___tag = "context___tag",
-  pluginCreator___id = "pluginCreator___id",
-  pluginCreator___parent___id = "pluginCreator___parent___id",
-  pluginCreator___parent___parent___id = "pluginCreator___parent___parent___id",
-  pluginCreator___parent___parent___children = "pluginCreator___parent___parent___children",
-  pluginCreator___parent___children = "pluginCreator___parent___children",
-  pluginCreator___parent___children___id = "pluginCreator___parent___children___id",
-  pluginCreator___parent___children___children = "pluginCreator___parent___children___children",
-  pluginCreator___parent___internal___content = "pluginCreator___parent___internal___content",
-  pluginCreator___parent___internal___contentDigest = "pluginCreator___parent___internal___contentDigest",
-  pluginCreator___parent___internal___description = "pluginCreator___parent___internal___description",
-  pluginCreator___parent___internal___fieldOwners = "pluginCreator___parent___internal___fieldOwners",
-  pluginCreator___parent___internal___ignoreType = "pluginCreator___parent___internal___ignoreType",
-  pluginCreator___parent___internal___mediaType = "pluginCreator___parent___internal___mediaType",
-  pluginCreator___parent___internal___owner = "pluginCreator___parent___internal___owner",
-  pluginCreator___parent___internal___type = "pluginCreator___parent___internal___type",
-  pluginCreator___children = "pluginCreator___children",
-  pluginCreator___children___id = "pluginCreator___children___id",
-  pluginCreator___children___parent___id = "pluginCreator___children___parent___id",
-  pluginCreator___children___parent___children = "pluginCreator___children___parent___children",
-  pluginCreator___children___children = "pluginCreator___children___children",
-  pluginCreator___children___children___id = "pluginCreator___children___children___id",
-  pluginCreator___children___children___children = "pluginCreator___children___children___children",
-  pluginCreator___children___internal___content = "pluginCreator___children___internal___content",
-  pluginCreator___children___internal___contentDigest = "pluginCreator___children___internal___contentDigest",
-  pluginCreator___children___internal___description = "pluginCreator___children___internal___description",
-  pluginCreator___children___internal___fieldOwners = "pluginCreator___children___internal___fieldOwners",
-  pluginCreator___children___internal___ignoreType = "pluginCreator___children___internal___ignoreType",
-  pluginCreator___children___internal___mediaType = "pluginCreator___children___internal___mediaType",
-  pluginCreator___children___internal___owner = "pluginCreator___children___internal___owner",
-  pluginCreator___children___internal___type = "pluginCreator___children___internal___type",
-  pluginCreator___internal___content = "pluginCreator___internal___content",
-  pluginCreator___internal___contentDigest = "pluginCreator___internal___contentDigest",
-  pluginCreator___internal___description = "pluginCreator___internal___description",
-  pluginCreator___internal___fieldOwners = "pluginCreator___internal___fieldOwners",
-  pluginCreator___internal___ignoreType = "pluginCreator___internal___ignoreType",
-  pluginCreator___internal___mediaType = "pluginCreator___internal___mediaType",
-  pluginCreator___internal___owner = "pluginCreator___internal___owner",
-  pluginCreator___internal___type = "pluginCreator___internal___type",
-  pluginCreator___resolve = "pluginCreator___resolve",
-  pluginCreator___name = "pluginCreator___name",
-  pluginCreator___version = "pluginCreator___version",
-  pluginCreator___pluginOptions___plugins = "pluginCreator___pluginOptions___plugins",
-  pluginCreator___pluginOptions___plugins___resolve = "pluginCreator___pluginOptions___plugins___resolve",
-  pluginCreator___pluginOptions___plugins___id = "pluginCreator___pluginOptions___plugins___id",
-  pluginCreator___pluginOptions___plugins___name = "pluginCreator___pluginOptions___plugins___name",
-  pluginCreator___pluginOptions___plugins___version = "pluginCreator___pluginOptions___plugins___version",
-  pluginCreator___pluginOptions___plugins___nodeAPIs = "pluginCreator___pluginOptions___plugins___nodeAPIs",
-  pluginCreator___pluginOptions___plugins___browserAPIs = "pluginCreator___pluginOptions___plugins___browserAPIs",
-  pluginCreator___pluginOptions___plugins___pluginFilepath = "pluginCreator___pluginOptions___plugins___pluginFilepath",
-  pluginCreator___pluginOptions___displayName = "pluginCreator___pluginOptions___displayName",
-  pluginCreator___pluginOptions___fileName = "pluginCreator___pluginOptions___fileName",
-  pluginCreator___pluginOptions___minify = "pluginCreator___pluginOptions___minify",
-  pluginCreator___pluginOptions___namespace = "pluginCreator___pluginOptions___namespace",
-  pluginCreator___pluginOptions___transpileTemplateLiterals = "pluginCreator___pluginOptions___transpileTemplateLiterals",
-  pluginCreator___pluginOptions___pure = "pluginCreator___pluginOptions___pure",
-  pluginCreator___pluginOptions___base64Width = "pluginCreator___pluginOptions___base64Width",
-  pluginCreator___pluginOptions___stripMetadata = "pluginCreator___pluginOptions___stripMetadata",
-  pluginCreator___pluginOptions___defaultQuality = "pluginCreator___pluginOptions___defaultQuality",
-  pluginCreator___pluginOptions___failOnError = "pluginCreator___pluginOptions___failOnError",
-  pluginCreator___pluginOptions___isTSX = "pluginCreator___pluginOptions___isTSX",
-  pluginCreator___pluginOptions___jsxPragma = "pluginCreator___pluginOptions___jsxPragma",
-  pluginCreator___pluginOptions___allExtensions = "pluginCreator___pluginOptions___allExtensions",
-  pluginCreator___pluginOptions___name = "pluginCreator___pluginOptions___name",
-  pluginCreator___pluginOptions___path = "pluginCreator___pluginOptions___path",
-  pluginCreator___pluginOptions___staticFolderName = "pluginCreator___pluginOptions___staticFolderName",
-  pluginCreator___pluginOptions___maxWidth = "pluginCreator___pluginOptions___maxWidth",
-  pluginCreator___pluginOptions___linkImagesToOriginal = "pluginCreator___pluginOptions___linkImagesToOriginal",
-  pluginCreator___pluginOptions___showCaptions = "pluginCreator___pluginOptions___showCaptions",
-  pluginCreator___pluginOptions___markdownCaptions = "pluginCreator___pluginOptions___markdownCaptions",
-  pluginCreator___pluginOptions___sizeByPixelDensity = "pluginCreator___pluginOptions___sizeByPixelDensity",
-  pluginCreator___pluginOptions___backgroundColor = "pluginCreator___pluginOptions___backgroundColor",
-  pluginCreator___pluginOptions___quality = "pluginCreator___pluginOptions___quality",
-  pluginCreator___pluginOptions___withWebp = "pluginCreator___pluginOptions___withWebp",
-  pluginCreator___pluginOptions___tracedSVG = "pluginCreator___pluginOptions___tracedSVG",
-  pluginCreator___pluginOptions___loading = "pluginCreator___pluginOptions___loading",
-  pluginCreator___pluginOptions___decoding = "pluginCreator___pluginOptions___decoding",
-  pluginCreator___pluginOptions___disableBgImageOnAlpha = "pluginCreator___pluginOptions___disableBgImageOnAlpha",
-  pluginCreator___pluginOptions___disableBgImage = "pluginCreator___pluginOptions___disableBgImage",
-  pluginCreator___pluginOptions___wrapperStyle = "pluginCreator___pluginOptions___wrapperStyle",
-  pluginCreator___pluginOptions___modulePath = "pluginCreator___pluginOptions___modulePath",
-  pluginCreator___pluginOptions___enableIdentityWidget = "pluginCreator___pluginOptions___enableIdentityWidget",
-  pluginCreator___pluginOptions___publicPath = "pluginCreator___pluginOptions___publicPath",
-  pluginCreator___pluginOptions___htmlTitle = "pluginCreator___pluginOptions___htmlTitle",
-  pluginCreator___pluginOptions___includeRobots = "pluginCreator___pluginOptions___includeRobots",
-  pluginCreator___pluginOptions___query = "pluginCreator___pluginOptions___query",
-  pluginCreator___pluginOptions___feeds = "pluginCreator___pluginOptions___feeds",
-  pluginCreator___pluginOptions___feeds___query = "pluginCreator___pluginOptions___feeds___query",
-  pluginCreator___pluginOptions___feeds___output = "pluginCreator___pluginOptions___feeds___output",
-  pluginCreator___pluginOptions___fonts = "pluginCreator___pluginOptions___fonts",
-  pluginCreator___pluginOptions___display = "pluginCreator___pluginOptions___display",
-  pluginCreator___pluginOptions___short_name = "pluginCreator___pluginOptions___short_name",
-  pluginCreator___pluginOptions___start_url = "pluginCreator___pluginOptions___start_url",
-  pluginCreator___pluginOptions___background_color = "pluginCreator___pluginOptions___background_color",
-  pluginCreator___pluginOptions___theme_color = "pluginCreator___pluginOptions___theme_color",
-  pluginCreator___pluginOptions___icon = "pluginCreator___pluginOptions___icon",
-  pluginCreator___pluginOptions___legacy = "pluginCreator___pluginOptions___legacy",
-  pluginCreator___pluginOptions___theme_color_in_head = "pluginCreator___pluginOptions___theme_color_in_head",
-  pluginCreator___pluginOptions___cache_busting_mode = "pluginCreator___pluginOptions___cache_busting_mode",
-  pluginCreator___pluginOptions___crossOrigin = "pluginCreator___pluginOptions___crossOrigin",
-  pluginCreator___pluginOptions___include_favicon = "pluginCreator___pluginOptions___include_favicon",
-  pluginCreator___pluginOptions___cacheDigest = "pluginCreator___pluginOptions___cacheDigest",
-  pluginCreator___pluginOptions___pathCheck = "pluginCreator___pluginOptions___pathCheck",
-  pluginCreator___nodeAPIs = "pluginCreator___nodeAPIs",
-  pluginCreator___browserAPIs = "pluginCreator___browserAPIs",
-  pluginCreator___ssrAPIs = "pluginCreator___ssrAPIs",
-  pluginCreator___pluginFilepath = "pluginCreator___pluginFilepath",
-  pluginCreator___packageJson___name = "pluginCreator___packageJson___name",
-  pluginCreator___packageJson___description = "pluginCreator___packageJson___description",
-  pluginCreator___packageJson___version = "pluginCreator___packageJson___version",
-  pluginCreator___packageJson___main = "pluginCreator___packageJson___main",
-  pluginCreator___packageJson___author = "pluginCreator___packageJson___author",
-  pluginCreator___packageJson___license = "pluginCreator___packageJson___license",
-  pluginCreator___packageJson___dependencies = "pluginCreator___packageJson___dependencies",
-  pluginCreator___packageJson___dependencies___name = "pluginCreator___packageJson___dependencies___name",
-  pluginCreator___packageJson___dependencies___version = "pluginCreator___packageJson___dependencies___version",
-  pluginCreator___packageJson___devDependencies = "pluginCreator___packageJson___devDependencies",
-  pluginCreator___packageJson___devDependencies___name = "pluginCreator___packageJson___devDependencies___name",
-  pluginCreator___packageJson___devDependencies___version = "pluginCreator___packageJson___devDependencies___version",
-  pluginCreator___packageJson___peerDependencies = "pluginCreator___packageJson___peerDependencies",
-  pluginCreator___packageJson___peerDependencies___name = "pluginCreator___packageJson___peerDependencies___name",
-  pluginCreator___packageJson___peerDependencies___version = "pluginCreator___packageJson___peerDependencies___version",
-  pluginCreator___packageJson___keywords = "pluginCreator___packageJson___keywords",
-  pluginCreatorId = "pluginCreatorId",
 }
 
 export type SitePageFilterInput = {
@@ -3252,14 +3085,14 @@ export type SitePageFilterInput = {
   internalComponentName?: Maybe<StringQueryOperatorInput>
   componentChunkName?: Maybe<StringQueryOperatorInput>
   matchPath?: Maybe<StringQueryOperatorInput>
+  isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>
+  pluginCreator?: Maybe<SitePluginFilterInput>
+  pluginCreatorId?: Maybe<StringQueryOperatorInput>
   id?: Maybe<StringQueryOperatorInput>
   parent?: Maybe<NodeFilterInput>
   children?: Maybe<NodeFilterListInput>
   internal?: Maybe<InternalFilterInput>
-  isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>
   context?: Maybe<SitePageContextFilterInput>
-  pluginCreator?: Maybe<SitePluginFilterInput>
-  pluginCreatorId?: Maybe<StringQueryOperatorInput>
 }
 
 export type SitePageGroupConnection = {
@@ -3479,11 +3312,6 @@ export enum SitePluginFieldsEnum {
   pluginOptions___disableBgImageOnAlpha = "pluginOptions___disableBgImageOnAlpha",
   pluginOptions___disableBgImage = "pluginOptions___disableBgImage",
   pluginOptions___wrapperStyle = "pluginOptions___wrapperStyle",
-  pluginOptions___modulePath = "pluginOptions___modulePath",
-  pluginOptions___enableIdentityWidget = "pluginOptions___enableIdentityWidget",
-  pluginOptions___publicPath = "pluginOptions___publicPath",
-  pluginOptions___htmlTitle = "pluginOptions___htmlTitle",
-  pluginOptions___includeRobots = "pluginOptions___includeRobots",
   pluginOptions___query = "pluginOptions___query",
   pluginOptions___feeds = "pluginOptions___feeds",
   pluginOptions___feeds___query = "pluginOptions___feeds___query",
@@ -3655,11 +3483,6 @@ export type SitePluginPluginOptions = {
   disableBgImageOnAlpha?: Maybe<Scalars["Boolean"]>
   disableBgImage?: Maybe<Scalars["Boolean"]>
   wrapperStyle?: Maybe<Scalars["String"]>
-  modulePath?: Maybe<Scalars["String"]>
-  enableIdentityWidget?: Maybe<Scalars["Boolean"]>
-  publicPath?: Maybe<Scalars["String"]>
-  htmlTitle?: Maybe<Scalars["String"]>
-  includeRobots?: Maybe<Scalars["Boolean"]>
   query?: Maybe<Scalars["String"]>
   feeds?: Maybe<Array<Maybe<SitePluginPluginOptionsFeeds>>>
   fonts?: Maybe<Array<Maybe<Scalars["String"]>>>
@@ -3725,11 +3548,6 @@ export type SitePluginPluginOptionsFilterInput = {
   disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>
   disableBgImage?: Maybe<BooleanQueryOperatorInput>
   wrapperStyle?: Maybe<StringQueryOperatorInput>
-  modulePath?: Maybe<StringQueryOperatorInput>
-  enableIdentityWidget?: Maybe<BooleanQueryOperatorInput>
-  publicPath?: Maybe<StringQueryOperatorInput>
-  htmlTitle?: Maybe<StringQueryOperatorInput>
-  includeRobots?: Maybe<BooleanQueryOperatorInput>
   query?: Maybe<StringQueryOperatorInput>
   feeds?: Maybe<SitePluginPluginOptionsFeedsFilterListInput>
   fonts?: Maybe<StringQueryOperatorInput>
@@ -4142,42 +3960,6 @@ export type ContactTemplateQuery = {
   }>
 }
 
-export type MainTemplateQueryVariables = Exact<{
-  slug: Scalars["String"]
-}>
-
-export type MainTemplateQuery = {
-  __typename?: "Query"
-  site?: Maybe<{
-    __typename?: "Site"
-    siteMetadata?: Maybe<{
-      __typename?: "SiteSiteMetadata"
-      title?: Maybe<string>
-    }>
-  }>
-  allMarkdownRemark: {
-    __typename?: "MarkdownRemarkConnection"
-    nodes: Array<{
-      __typename?: "MarkdownRemark"
-      excerpt?: Maybe<string>
-      timeToRead?: Maybe<number>
-      fields?: Maybe<{ __typename?: "Fields"; slug?: Maybe<string> }>
-      frontmatter?: Maybe<{
-        __typename?: "Frontmatter"
-        date?: Maybe<any>
-        description?: Maybe<string>
-        title?: Maybe<string>
-        tags?: Maybe<Array<string>>
-      }>
-    }>
-  }
-  markdownRemark?: Maybe<{
-    __typename?: "MarkdownRemark"
-    html?: Maybe<string>
-    frontmatter?: Maybe<{ __typename?: "Frontmatter"; title?: Maybe<string> }>
-  }>
-}
-
 export type PostBySlugQueryVariables = Exact<{
   slug: Scalars["String"]
   prevSlug?: Maybe<Scalars["String"]>
@@ -4196,7 +3978,7 @@ export type PostBySlugQuery = {
       tags?: Maybe<Array<string>>
       date?: Maybe<any>
       description?: Maybe<string>
-      social_image?: Maybe<{ __typename?: "File"; absolutePath: string }>
+      profile_image?: Maybe<{ __typename?: "File"; absolutePath: string }>
     }>
   }>
   prev?: Maybe<{
@@ -4234,6 +4016,42 @@ export type TagsTemplateQuery = {
       }>
     }>
   }
+}
+
+export type MainTemplateQueryVariables = Exact<{
+  slug: Scalars["String"]
+}>
+
+export type MainTemplateQuery = {
+  __typename?: "Query"
+  site?: Maybe<{
+    __typename?: "Site"
+    siteMetadata?: Maybe<{
+      __typename?: "SiteSiteMetadata"
+      title?: Maybe<string>
+    }>
+  }>
+  allMarkdownRemark: {
+    __typename?: "MarkdownRemarkConnection"
+    nodes: Array<{
+      __typename?: "MarkdownRemark"
+      excerpt?: Maybe<string>
+      timeToRead?: Maybe<number>
+      fields?: Maybe<{ __typename?: "Fields"; slug?: Maybe<string> }>
+      frontmatter?: Maybe<{
+        __typename?: "Frontmatter"
+        date?: Maybe<any>
+        description?: Maybe<string>
+        title?: Maybe<string>
+        tags?: Maybe<Array<string>>
+      }>
+    }>
+  }
+  markdownRemark?: Maybe<{
+    __typename?: "MarkdownRemark"
+    html?: Maybe<string>
+    frontmatter?: Maybe<{ __typename?: "Frontmatter"; title?: Maybe<string> }>
+  }>
 }
 
 export const GatsbyImageSharpFixedFragmentDoc = gql`
@@ -4767,91 +4585,6 @@ export type ContactTemplateQueryResult = Apollo.QueryResult<
   ContactTemplateQuery,
   ContactTemplateQueryVariables
 >
-export const MainTemplateDocument = gql`
-  query MainTemplate($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
-      sort: { order: DESC, fields: frontmatter___date }
-      limit: 9
-    ) {
-      nodes {
-        fields {
-          slug
-        }
-        excerpt
-        timeToRead
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          description
-          title
-          tags
-        }
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-      }
-    }
-  }
-`
-
-/**
- * __useMainTemplateQuery__
- *
- * To run a query within a React component, call `useMainTemplateQuery` and pass it any options that fit your needs.
- * When your component renders, `useMainTemplateQuery` returns an object from Apollo Client that contains loading, error, and data properties
- * you can use to render your UI.
- *
- * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
- *
- * @example
- * const { data, loading, error } = useMainTemplateQuery({
- *   variables: {
- *      slug: // value for 'slug'
- *   },
- * });
- */
-export function useMainTemplateQuery(
-  baseOptions: Apollo.QueryHookOptions<
-    MainTemplateQuery,
-    MainTemplateQueryVariables
-  >
-) {
-  const options = { ...defaultOptions, ...baseOptions }
-  return Apollo.useQuery<MainTemplateQuery, MainTemplateQueryVariables>(
-    MainTemplateDocument,
-    options
-  )
-}
-export function useMainTemplateLazyQuery(
-  baseOptions?: Apollo.LazyQueryHookOptions<
-    MainTemplateQuery,
-    MainTemplateQueryVariables
-  >
-) {
-  const options = { ...defaultOptions, ...baseOptions }
-  return Apollo.useLazyQuery<MainTemplateQuery, MainTemplateQueryVariables>(
-    MainTemplateDocument,
-    options
-  )
-}
-export type MainTemplateQueryHookResult = ReturnType<
-  typeof useMainTemplateQuery
->
-export type MainTemplateLazyQueryHookResult = ReturnType<
-  typeof useMainTemplateLazyQuery
->
-export type MainTemplateQueryResult = Apollo.QueryResult<
-  MainTemplateQuery,
-  MainTemplateQueryVariables
->
 export const PostBySlugDocument = gql`
   query PostBySlug($slug: String!, $prevSlug: String, $nextSlug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -4862,7 +4595,7 @@ export const PostBySlugDocument = gql`
         tags
         date(formatString: "MMMM DD, YYYY")
         description
-        social_image {
+        profile_image {
           absolutePath
         }
       }
@@ -5013,4 +4746,89 @@ export type TagsTemplateLazyQueryHookResult = ReturnType<
 export type TagsTemplateQueryResult = Apollo.QueryResult<
   TagsTemplateQuery,
   TagsTemplateQueryVariables
+>
+export const MainTemplateDocument = gql`
+  query MainTemplate($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "posts" } } }
+      sort: { order: DESC, fields: frontmatter___date }
+      limit: 9
+    ) {
+      nodes {
+        fields {
+          slug
+        }
+        excerpt
+        timeToRead
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          description
+          title
+          tags
+        }
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`
+
+/**
+ * __useMainTemplateQuery__
+ *
+ * To run a query within a React component, call `useMainTemplateQuery` and pass it any options that fit your needs.
+ * When your component renders, `useMainTemplateQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useMainTemplateQuery({
+ *   variables: {
+ *      slug: // value for 'slug'
+ *   },
+ * });
+ */
+export function useMainTemplateQuery(
+  baseOptions: Apollo.QueryHookOptions<
+    MainTemplateQuery,
+    MainTemplateQueryVariables
+  >
+) {
+  const options = { ...defaultOptions, ...baseOptions }
+  return Apollo.useQuery<MainTemplateQuery, MainTemplateQueryVariables>(
+    MainTemplateDocument,
+    options
+  )
+}
+export function useMainTemplateLazyQuery(
+  baseOptions?: Apollo.LazyQueryHookOptions<
+    MainTemplateQuery,
+    MainTemplateQueryVariables
+  >
+) {
+  const options = { ...defaultOptions, ...baseOptions }
+  return Apollo.useLazyQuery<MainTemplateQuery, MainTemplateQueryVariables>(
+    MainTemplateDocument,
+    options
+  )
+}
+export type MainTemplateQueryHookResult = ReturnType<
+  typeof useMainTemplateQuery
+>
+export type MainTemplateLazyQueryHookResult = ReturnType<
+  typeof useMainTemplateLazyQuery
+>
+export type MainTemplateQueryResult = Apollo.QueryResult<
+  MainTemplateQuery,
+  MainTemplateQueryVariables
 >

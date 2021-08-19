@@ -16,7 +16,7 @@ const AboutTemplate: React.FC<{ data: AboutTemplateQueryResult["data"] }> = ({
     <Layout title={frontmatter.title}>
       <AboutWrapper>
         <AboutImageWrapper image={profileImage} alt="" />
-
+        <br />
         <AboutCopy dangerouslySetInnerHTML={{ __html: html }} />
       </AboutWrapper>
     </Layout>
@@ -27,6 +27,7 @@ export default AboutTemplate
 
 const AboutWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   height: 100%;

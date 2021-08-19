@@ -43,15 +43,13 @@ const HomePage: React.FC<{ data: MainTemplateQueryResult["data"] }> = ({
 export default HomePage
 
 const Intro = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: block;
+  text-align: left
   max-width: 60ch;
-  align-items: center;
   margin-right: auto;
   margin-left: auto;
   margin-top: var(--size-800);
   margin-bottom: var(--size-900);
-  text-align: center;
 
   & p {
     text-transform: capitalize;
