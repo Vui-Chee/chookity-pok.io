@@ -49,10 +49,6 @@ const Header: React.FC<{
 
         <HeaderNavList>
           <HeaderNavListItem>
-            <Link to="/blog">Blog</Link>
-          </HeaderNavListItem>
-
-          <HeaderNavListItem>
             <Link to="/about">About</Link>
           </HeaderNavListItem>
 
