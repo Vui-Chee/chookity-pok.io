@@ -1,8 +1,8 @@
 ---
 template: "index"
-title: "Gatsby Starter Glass"
+title: "Main page"
 ---
 
-# Hello World
+# chookity-pok.io 
 
-A minimal & beautiful gatsby personal blog starter with nice glassmorphism UI.
+Personal blog by [Vui-Chee](https://github.com/Vui-Chee/)

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Glass`,
+    title: `Home`,
     author: {
       name: `Vui Chee`,
       summary: `Self-taught front-end web dev. JAMStack.`,
@@ -9,7 +9,7 @@ module.exports = {
     socialLinks: [
       {
         name: "github",
-        url: "https://github.com",
+        url: "https://github.com/vui-chee",
       },
     ],
   },
