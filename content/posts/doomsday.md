@@ -1,6 +1,6 @@
 ---
 title: Doomsday Fuel Challenge
-date: 2021-08-20
+date: 2021-08-21
 tags: [google, personal]
 description: How to solve Google's foobar challenge with little math
 ---
