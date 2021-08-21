@@ -95,6 +95,60 @@ The values seem to stabilize after multiplying a couple of times.
 Note this only works if the matrix is a transition matrix with an absorbing state. Otherwise, you could also get
 cases where the values oscillate forever.
 
-<div style="background:rgba(255, 255, 255, 0.6);height:100%;width:12%;padding:10px 10px;">
-  <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0&space;&&space;1\\&space;1&space;&&space;0&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0&space;&&space;1\\&space;1&space;&&space;0&space;\end{bmatrix}" title="\begin{bmatrix} 0 & 1\\ 1 & 0 \end{bmatrix}" /></a>
+<div style="background:rgba(255, 255, 255, 0.6);height:100%;width:100%;padding:10px 10px;">
+  <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0&space;&&space;1\\&space;1&space;&&space;0&space;\end{bmatrix}^{30}&space;=&space;\begin{bmatrix}&space;1&space;&&space;0\\&space;0&space;&&space;1&space;\end{bmatrix}&space;,&space;\begin{bmatrix}&space;0&space;&&space;1\\&space;1&space;&&space;0&space;\end{bmatrix}^{31}&space;=&space;\begin{bmatrix}&space;0&space;&&space;1\\&space;1&space;&&space;0&space;\end{bmatrix}&space;..." target="_blank"><img src="https://latex.codecogs.com/png.latex?\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0&space;&&space;1\\&space;1&space;&&space;0&space;\end{bmatrix}^{30}&space;=&space;\begin{bmatrix}&space;1&space;&&space;0\\&space;0&space;&&space;1&space;\end{bmatrix}&space;,&space;\begin{bmatrix}&space;0&space;&&space;1\\&space;1&space;&&space;0&space;\end{bmatrix}^{31}&space;=&space;\begin{bmatrix}&space;0&space;&&space;1\\&space;1&space;&&space;0&space;\end{bmatrix}&space;..." title="\begin{bmatrix} 0 & 1\\ 1 & 0 \end{bmatrix}^{30} = \begin{bmatrix} 1 & 0\\ 0 & 1 \end{bmatrix} , \begin{bmatrix} 0 & 1\\ 1 & 0 \end{bmatrix}^{31} = \begin{bmatrix} 0 & 1\\ 1 & 0 \end{bmatrix} ..." /></a>
 </div>
+
+Luckily for this problem, it is guaranteed that the **terminating states will stabilize at some point**.
+
+### How is this relevant to the problem?
+
+Great question. No point talking about Markov Chains without getting back to the nugget.
+
+If you have following along, the first we need to do, is take our input `m` and convert it into a matrix of probabilities.
+
+So given:
+
+<div style="background:rgba(255, 255, 255, 0.6);height:100%;width:30%;padding:10px 10px;">
+  <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1\\&space;4&space;&&space;0&space;&&space;0&space;&&space;3&space;&&space;2&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0\\&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1\\&space;4&space;&&space;0&space;&&space;0&space;&&space;3&space;&&space;2&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0\\&space;\end{bmatrix}" title="\begin{bmatrix} 0 & 1 & 0 & 0 & 0 & 1\\ 4 & 0 & 0 & 3 & 2 & 0\\ 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0\\ \end{bmatrix}" /></a>
+</div>
+
+We need to convert `m` into:
+
+<div style="background:rgba(255, 255, 255, 0.6);height:100%;width:40%;padding:10px 10px;">
+  <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0&space;&&space;1/2&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1/2\\&space;4/9&space;&&space;0&space;&&space;0&space;&&space;3/9&space;&&space;2/9&space;&&space;0\\&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1\\&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0&space;&&space;1/2&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1/2\\&space;4/9&space;&&space;0&space;&&space;0&space;&&space;3/9&space;&&space;2/9&space;&&space;0\\&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1\\&space;\end{bmatrix}" title="\begin{bmatrix} 0 & 1/2 & 0 & 0 & 0 & 1/2\\ 4/9 & 0 & 0 & 3/9 & 2/9 & 0\\ 0 & 0 & 1 & 0 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 0 & 0 & 1\\ \end{bmatrix}" /></a>
+</div>
+
+Notice, how each row total sums up to 1. That is because the total probability arising from each state can only add up to 1. 
+
+Sorry I lied about simply knowing matrices and Markov Chains can actually solve the problem. Apparently you also need basic
+probability as well. Haha.
+
+#### Terminating State
+
+Notice in each row in `m` where all values are `0`, the converted matrix has a single value of `1` in that row. 
+
+Why is that? You may ask.
+
+When you reach a terminating state, there are no other states you can transition to except the current state you are in. So
+the only path taken is the self-loop - in short, there is a `100%` probability you reside in the same state.
+
+
+### Ok, now I have the converted matrix...what now?
+
+As I was saying about matrix multiplication and stable terminating values, all we need to do now is basically repeatedly
+multiply our converted matrix till the values stabilize.
+
+**Beware to only check if the terminating states stabilize. And NOT states which are non-terminating.**
+
+
+### Finally...are we done?
+
+Once you get the stabilize values in final transition matrix, those should be probabilities required by the problem.
+
+Unfortunately, we are talking about Google. And boy do they not make things easy.
+
+Earlier on, I mentioned in the final part of the problem, that the answers must be a **list of numerators**, with the **lowest
+common denominator as the last element in the output list**.
+
+Sigh...looks like we need **fractions**!!!
