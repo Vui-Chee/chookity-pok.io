@@ -171,3 +171,35 @@ Notice what happens when I add these two fractions, the output is
 <div style="background:rgba(255, 255, 255, 0.6);padding:10px;display:inline-block;">
   <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{150}&space;\fn_cm&space;\frac{5}{6}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\inline&space;\dpi{150}&space;\fn_cm&space;\frac{5}{6}" title="\frac{5}{6}" /></a>
 </div>
+
+If you simplify the fractions each time you added them together, you will get the LCD evetually.
+
+Using that idea, I leave it to you to figure out how to implement such an algorithm.
+
+And with the LCD, you can deduce the multiplier for each numerator and output that in the final list.
+
+
+## Conclusion
+
+Note that the challenge uses `python 2.7.13`, and prohibits use of libraries such as `numpy`, it means you have
+to implement most of the operations yourself.
+
+Luckily for you, all you need to implement/import are:
+
+1. a function which multiplies two matrices
+2. a function which computes the LCD
+3. `fractions` module if you are using Python
+
+And beware in older versions of Python, `1 / 2` does not return a float but does floored integer division.
+
+You will need to do this:
+
+`from __future__ import division`
+
+to ensure the division is performed as expected.
+
+I hope this will be useful for you without giving away the solution. If you find this too difficult, you can
+always look online for solutions which involves inverse matrices and serious linear algebra. At the very least,
+I can guarantee that this solution is my own and I can understand it.
+
+![status](/media/status.jpg)
