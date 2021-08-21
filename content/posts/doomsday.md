@@ -71,14 +71,14 @@ skills are god-like, you may find that some people suggested some complicated ma
 algebra or matrix inverses. **But I am here to tell you that do not need fancy math to solve this problem
 at all.**
 
-First all you need to do recognize some simple patterns.
+All you need to do recognize some simple patterns.
 
 ## What is a Markov Chain?
 
 To answer this question, we just need a basic understanding of what a Markov Chain is. Now you could
 google this on [Wikipedia](https://en.wikipedia.org/wiki/Markov_chain#Types_of_Markov_chains), but I am giving you the extra short version (albeit oversimplified version).
 
-Imagine a simple matrix called m containing a bunch of probabilities:
+Imagine a simple matrix containing a bunch of probabilities:
 
 <div style="background:rgba(255, 255, 255, 0.6);padding:10px;display:inline-block;">
   <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0.3&space;&&space;0.7&space;\\&space;0.4&space;&&space;0.6&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0.3&space;&&space;0.7&space;\\&space;0.4&space;&&space;0.6&space;\end{bmatrix}" title="\begin{bmatrix} 0.3 & 0.7 \\ 0.4 & 0.6 \end{bmatrix}" /></a>
@@ -172,7 +172,7 @@ Notice what happens when I add these two fractions, the output is
   <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{150}&space;\fn_cm&space;\frac{5}{6}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\inline&space;\dpi{150}&space;\fn_cm&space;\frac{5}{6}" title="\frac{5}{6}" /></a>
 </div>
 
-If you simplify the fractions each time you added them together, you will get the LCD evetually.
+If you simplify the fractions each time you added them together, you will get the LCD eventually.
 
 Using that idea, I leave it to you to figure out how to implement such an algorithm.
 
@@ -199,7 +199,7 @@ You will need to do this:
 to ensure the division is performed as expected.
 
 I hope this will be useful for you without giving away the solution. If you find this too difficult, you can
-always look online for solutions which involves inverse matrices and serious linear algebra. At the very least,
+always look online for solutions which involves inverse matrices and serious linear algebra. At the very least, 
 I can guarantee that this solution is my own and I can understand it.
 
 ![status](/media/status.jpg)
