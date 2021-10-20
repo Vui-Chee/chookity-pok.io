@@ -121,7 +121,7 @@ body {
     helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   background-attachment: fixed;
   color: ${(props) => props.theme.color};
-  background: ${(props) => props.theme.background};
+  background-image: ${(props) => props.theme.background};
 }
 
 h1,
