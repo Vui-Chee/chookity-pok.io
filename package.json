@@ -1,6 +1,6 @@
 {
   "name": "chookity-pok-io",
-	"engines": {
+  "engines": {
     "node": ">=16.13 <17"
   },
   "private": true,
@@ -16,7 +16,7 @@
     "gatsby-plugin-image": "^2.14.1",
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-react-helmet": "^4.0.0",
-    "gatsby-plugin-sharp": "^3.0.0",
+    "gatsby-plugin-sharp": "^4.14.1",
     "gatsby-plugin-styled-components": "^4.0.0",
     "gatsby-plugin-typescript": "^3.10.0",
     "gatsby-remark-copy-linked-files": "^4.7.0",
@@ -27,7 +27,7 @@
     "gatsby-remark-smartypants": "^4.7.0",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-remark": "^4.7.0",
-    "gatsby-transformer-sharp": "^3.0.0",
+    "gatsby-transformer-sharp": "^4.14.0",
     "graphql": "^15.5.1",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
