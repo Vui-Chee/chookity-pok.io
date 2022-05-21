@@ -1,7 +1,7 @@
 {
   "name": "chookity-pok-io",
   "engines": {
-    "node": ">=16.13 <17"
+    "node": ">=16.13 <18"
   },
   "private": true,
   "description": "My personal blog",
