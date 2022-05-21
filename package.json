@@ -52,22 +52,15 @@
     "prettier": "2.3.2",
     "typescript": "^4.6.4"
   },
-  "homepage": "",
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "type-check": "tsc",
     "gql-types": "graphql-codegen --config codegen.yml"
   }
