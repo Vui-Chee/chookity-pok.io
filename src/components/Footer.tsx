@@ -23,6 +23,7 @@ export default Footer
 const StyledFooter = styled.footer`
   padding-top: var(--size-300);
   padding-bottom: var(--size-300);
+  z-index: 1;
 `
 
 const FooterAttribution = styled.p`
