@@ -51,6 +51,7 @@ const Layout: React.FC<{
   title: string
   socialImage?: string
   description?: string
+  children: React.ReactNode
 }> = ({ children, title, description = "", socialImage = "" }) => {
   const [colorMode, setColorMode] = React.useState("light")
 
@@ -105,5 +106,9 @@ const LayoutWrapper = styled.div`
 
   & footer {
     margin-top: auto;
+  }
+
+  main {
+    z-index: 1;
   }
 `

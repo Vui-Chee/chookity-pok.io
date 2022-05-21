@@ -71,7 +71,9 @@ const Header: React.FC<{
 
 export default Header
 
-const HeaderNavList: React.FC = ({ children }) => {
+const HeaderNavList: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   return (
     <StyledNav>
       <StyledNavList>{children}</StyledNavList>
@@ -79,11 +81,14 @@ const HeaderNavList: React.FC = ({ children }) => {
   )
 }
 
-const HeaderNavListItem: React.FC = ({ children }) => {
+const HeaderNavListItem: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   return <StyledNavListItem>{children}</StyledNavListItem>
 }
 
 const StyledHeader = styled.header`
+  z-index: 1;
   padding-top: var(--size-300);
 `
 

@@ -13,6 +13,16 @@ const PostTemplate: React.FC<{ data: PostBySlugQueryResult["data"] }> = ({
   const prev = data.prev
   const next = data.next
 
+  React.useEffect(() => {
+    const mainBody = document.querySelector("#___gatsby")
+    if (mainBody) {
+      mainBody.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    }
+  }, [])
+
   return (
     <Layout
       title={frontmatter.title}

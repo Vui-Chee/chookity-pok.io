@@ -171,14 +171,6 @@ const FormFeedbackWrapper = styled.div`
   font-size: var(--size-300);
 `
 
-const FormSucessFeedback = styled.span`
-  color: green;
-`
-
-const FormErrorFeedback = styled.span`
-  color: red;
-`
-
 const FormButton = styled.button`
   margin-top: 1rem;
   padding: 0.45rem;
