@@ -11,25 +11,25 @@ Occasionally, unsuspecting people's browser tabs are hijacked by Google and turn
 
 And so Google has set a challenge for you.
 
-And one of those given is the **Doomsday fuel problem**. 
+And one of those given is the **Doomsday fuel problem**.
 
-__To keep this blog brief, I am omitting the first preamble but leaving the second one as context for the actual question.__
+**To keep this blog brief, I am omitting the first preamble but leaving the second one as context for the actual question.**
 
 # Problem Description
 
-*Commander Lambda has tasked you to help the scientists increase fuel creation efficiency by predicting the end state of a given ore sample. You have carefully studied the different structures that the ore can take and which transitions it undergoes. It appears that, while random, the probability of each structure transforming is fixed. That is, each time the ore is in 1 state, it has the same probabilities of entering the next state (which might be the same state). You have recorded the observed transitions in a matrix. The others in the lab have hypothesized more exotic forms that the ore can become, but you haven't seen all of them.*
+_Commander Lambda has tasked you to help the scientists increase fuel creation efficiency by predicting the end state of a given ore sample. You have carefully studied the different structures that the ore can take and which transitions it undergoes. It appears that, while random, the probability of each structure transforming is fixed. That is, each time the ore is in 1 state, it has the same probabilities of entering the next state (which might be the same state). You have recorded the observed transitions in a matrix. The others in the lab have hypothesized more exotic forms that the ore can become, but you haven't seen all of them._
 
 #### After all of that, here is the actual question:
 
-*Write a function answer(m) that takes an array of array of nonnegative ints representing how many times that state has gone to the next state 
-and return an array of ints for each terminal state giving the exact probabilities of each terminal state, represented as the numerator for each 
-state, then the denominator for all of them at the end and in simplest form.*
+_Write a function answer(m) that takes an array of array of nonnegative ints representing how many times that state has gone to the next state
+and return an array of ints for each terminal state giving the exact probabilities of each terminal state, represented as the numerator for each
+state, then the denominator for all of them at the end and in simplest form._
 
-*The matrix is at most 10 by 10.*
+_The matrix is at most 10 by 10._
 
-*It is guaranteed that no matter which state the ore is in, there is a path from that state to a terminal state. 
-That is, the processing will always eventually end in a stable state. 
-The ore starts in state 0. The denominator will fit within a signed 32-bit integer during the calculation, as long as the fraction is simplified regularly.*
+_It is guaranteed that no matter which state the ore is in, there is a path from that state to a terminal state.
+That is, the processing will always eventually end in a stable state.
+The ore starts in state 0. The denominator will fit within a signed 32-bit integer during the calculation, as long as the fraction is simplified regularly._
 
 For example, consider the matrix m:
 
@@ -61,8 +61,8 @@ s4 has probability 1/7
 s5 has probability 9/14
 ```
 
-So, putting that together, and making a common denominator, gives an answer in the form of 
-``[s2.numerator, s3.numerator, s4.numerator, s5.numerator, denominator]`` which is: ``[0, 3, 2, 9, 14]``.
+So, putting that together, and making a common denominator, gives an answer in the form of
+`[s2.numerator, s3.numerator, s4.numerator, s5.numerator, denominator]` which is: `[0, 3, 2, 9, 14]`.
 
 # So how do we go about solving it?
 
@@ -119,20 +119,19 @@ We need to convert `m` into:
   <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0&space;&&space;1/2&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1/2\\&space;4/9&space;&&space;0&space;&&space;0&space;&&space;3/9&space;&&space;2/9&space;&&space;0\\&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1\\&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\inline&space;\dpi{150}&space;\fn_cm&space;\begin{bmatrix}&space;0&space;&&space;1/2&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1/2\\&space;4/9&space;&&space;0&space;&&space;0&space;&&space;3/9&space;&&space;2/9&space;&&space;0\\&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;&&space;0\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;&&space;1\\&space;\end{bmatrix}" title="\begin{bmatrix} 0 & 1/2 & 0 & 0 & 0 & 1/2\\ 4/9 & 0 & 0 & 3/9 & 2/9 & 0\\ 0 & 0 & 1 & 0 & 0 & 0\\ 0 & 0 & 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 0 & 0 & 1\\ \end{bmatrix}" /></a>
 </div>
 
-Notice, how each row total sums up to 1. That is because the total probability arising from each state can only add up to 1. 
+Notice, how each row total sums up to 1. That is because the total probability arising from each state can only add up to 1.
 
 Sorry I lied about simply knowing matrices and Markov Chains can actually solve the problem. Apparently you also need basic
 probability as well. Haha.
 
 #### Terminating State
 
-Notice in each row in `m` where all values are `0`, the converted matrix has a single value of `1` in that row. 
+Notice in each row in `m` where all values are `0`, the converted matrix has a single value of `1` in that row.
 
 Why is that? You may ask.
 
 When you reach a terminating state, there are no other states you can transition to except the current state you are in. So
 the only path taken is the self-loop - in short, there is a `100%` probability you reside in the same state.
-
 
 ### Ok, now I have the converted matrix...what now?
 
@@ -140,7 +139,6 @@ As I was saying about matrix multiplication and stable terminating values, all w
 multiply our converted matrix till the values stabilize**.
 
 **Beware to only check if the terminating states stabilize. And NOT states which are non-terminating.**
-
 
 ### Finally...are we done?
 
@@ -178,7 +176,6 @@ Using that idea, I leave it to you to figure out how to implement such an algori
 
 And with the LCD, you can deduce the multiplier for each numerator and output that in the final list.
 
-
 ## Conclusion
 
 Note that the challenge uses `python 2.7.13`, and prohibits use of libraries such as `numpy`, it means you have
@@ -199,7 +196,7 @@ You will need to do this:
 to ensure the division is performed as expected.
 
 I hope this will be useful for you without giving away the solution. If you find this too difficult, you can
-always look online for solutions which involves inverse matrices and serious linear algebra. At the very least, 
+always look online for solutions which involves inverse matrices and serious linear algebra. At the very least,
 I can guarantee that this solution is my own and I can understand it.
 
 ![status](/media/status.jpg)

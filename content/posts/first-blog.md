@@ -11,8 +11,8 @@ The prime directive for this project is to allow my ideas to be expressed to a w
 Essentially learning in public.
 
 Let's get this straight. Yeah, I can do frontend - but that does not mean
-I want to spend the remaining waking hours of my life doing it. The real kick I get from doing this is to build 
-something really beautiful (must be something to do with my love for art when I was young). But beyond that, my 
+I want to spend the remaining waking hours of my life doing it. The real kick I get from doing this is to build
+something really beautiful (must be something to do with my love for art when I was young). But beyond that, my
 soul is yearning for something else.
 
 Nevertheless, this blog marks the end of one chapter and the start of another.
