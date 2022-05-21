@@ -11,7 +11,12 @@ interface HtmlProps {
 
 export default (props: HtmlProps) => {
   return (
-    <html {...props.htmlAttributes}>
+    <html
+      {...props.htmlAttributes}
+      style={{
+        backgroundColor: "black",
+      }}
+    >
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />

@@ -88,6 +88,7 @@ const HeaderNavListItem: React.FC<{ children: React.ReactNode }> = ({
 }
 
 const StyledHeader = styled.header`
+  z-index: 1;
   padding-top: var(--size-300);
 `
 

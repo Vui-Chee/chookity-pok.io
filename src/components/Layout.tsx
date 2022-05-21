@@ -107,4 +107,8 @@ const LayoutWrapper = styled.div`
   & footer {
     margin-top: auto;
   }
+
+  main {
+    z-index: 1;
+  }
 `
