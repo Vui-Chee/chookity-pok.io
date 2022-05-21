@@ -145,13 +145,13 @@ const PostPagination = styled.nav`
     padding-bottom: 0.5rem;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: ${(props) => props.theme.background};
     backdrop-filter: blur(10px);
     margin: 0.5rem;
   }
 
   & > *:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: ${(props) => props.theme.postItem.hover.background};
   }
 
   & span {
