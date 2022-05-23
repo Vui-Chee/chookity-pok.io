@@ -12,10 +12,23 @@ export interface GlobalTheme extends DefaultTheme {
   [key: string]: {}
 }
 
+const commonTextStyle = {
+  "-webkit-background-clip": "text",
+  "-moz-background-clip": "text",
+  "-ms-background-clip": "text",
+  "-o-background-clip": "text",
+  "background-clip": "text",
+  color: "transparent",
+}
+
 export const themes: GlobalTheme = {
   light: {
     color: "#000",
     background: "linear-gradient(#ffc09f, #C5EBFF)",
+    text: {
+      ...commonTextStyle,
+      "background-image": "linear-gradient(111deg, #a0a, #00a)",
+    },
     postItem: {
       background: "rgba(255, 255, 255, 0.3)",
       hover: {
@@ -32,6 +45,10 @@ export const themes: GlobalTheme = {
   dark: {
     color: "#ffc09f",
     background: "linear-gradient(#240940, #281036, #622b6a)",
+    text: {
+      ...commonTextStyle,
+      "background-image": "linear-gradient(111deg, #f55, #ff5)",
+    },
     postItem: {
       background: "rgba(42,11,61,0.2)",
       hover: {

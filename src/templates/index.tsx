@@ -51,6 +51,10 @@ const Intro = styled.div`
   margin-top: var(--size-800);
   margin-bottom: var(--size-900);
 
+  > h1 {
+    ${(props) => props.theme.text}
+  }
+
   & p {
     text-transform: capitalize;
     font-size: var(--size-400);
